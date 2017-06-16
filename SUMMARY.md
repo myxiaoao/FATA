@@ -18,17 +18,17 @@
     - [4.2 As Organizer 作为管理工具](./page/4.2_As_Organizer.md)
     - [4.3 Booting Providers 服务提供者的启动过程](./page/4.3_Booting_Providers.md)
     - [4.4 Providing The Core 核心也是服务提供者的模式](./page/4.4_Providing_The_Core.md)
-* [5 Application Structure 应用结构](./page/5_Application_Structure.md)
+* 5 Application Structure 应用结构
     - [5.1 Introduction 介绍](./page/5.1_Introduction.md)
     - [5.2 MVC Is Killing You MVC是慢性谋杀](./page/5.2_MVC_Is_Killing_You.md)
     - [5.3 Bye, Bye Models 再见，模型](./page/5.3_Bye_Models.md)
     - [5.4 It's All About The Layers 核心思想就是分层](./page/5.4_It's_All_About_The_Layers.md)
     - [5.5 Where To Put "Stuff" 东西都放哪儿？](./page/5.5_Where_To_Put_Stuff.md)
-* [6 Applied Architecture: Decoupling Handles 实用做法：解耦处理函数](./page/6_Applied_Architecture_Decoupling_Handles.md)
+* 6 Applied Architecture: Decoupling Handles 实用做法：解耦处理函数
     - [6.1 Introduction 介绍](./page/6.1_Introduction.md)
     - [6.2 Decoupling Handlers 解耦处理函数](./page/6.2_Decoupling_Handlers.md)
     - [6.3 Other Handlers 其他处理函数](./page/6.3_Other_Handlers.md)
-* [7 Extending The Framework 扩展框架](./page/7_Extending_The_Framework.md)
+* 7 Extending The Framework 扩展框架
     - [7.1 Introduction 介绍](./page/7.1_Introduction.md)
     - [7.2 Managers & Factories 管理者和工厂](./page/7.2_Managers_&_Factories.md)
     - [7.3 Cache 缓存](./page/7.3_Cache.md)
@@ -36,18 +36,18 @@
     - [7.5 Authentication 身份认证](./page/7.5_Authentication.md)
     - [7.6 IoC Based Extension 使用容器进行扩展](./page/7.6_IoC_Based_Extension.md)
     - [7.7 Request Extension 请求的扩展](./page/7.7_Request_Extension.md)
-* [8 Single Responsibility Principle 单一职责原则](./page/8_Single_Responsibility_Principle.md)
+* 8 Single Responsibility Principle 单一职责原则
     - [8.1 Introduction 介绍](./page/8.1_Introduction.md)
     - [8.2 In Action 实践](./page/8.2_In_Action.md)
-* [9 Open Closed Principle 开放封闭原则](./page/9_Open_Closed_Principle.md)
+* 9 Open Closed Principle 开放封闭原则
     - [9.1 Introduction 介绍](./page/9.1_Introduction.md)
     - [9.2 In Action 实践](./page/9.2_In_Action.md)
-* [10 Liskov Substitution Principle 里氏替换原则](./page/10_Liskov_Substitution_Principle.md)
+* 10 Liskov Substitution Principle 里氏替换原则
     - [10.1 Introduction 介绍](./page/10.1_Introduction.md)
     - [10.2 In Action 实践](./page/10.2_In_Action.md)
-* [11 Interface Segregation Principle 接口隔离原则](./page/11_Interface_Segregation_Principle.md)
+* 11 Interface Segregation Principle 接口隔离原则
     - [11.1 Introduction 介绍](./page/11.1_Introduction.md)
     - [11.2 In Action 实践](./page/11.2_In_Action.md)
-* [12 Dependency Inversion Principle 依赖反转原则](./page/12_Dependency_Inversion_Principle.md)
+* 12 Dependency Inversion Principle 依赖反转原则
     - [12.1 Introduction 介绍](./page/12.1_Introduction.md)
     - [12.2 In Action 实践](./page/12.2_In_Action.md)

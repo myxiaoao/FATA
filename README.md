@@ -26,4 +26,6 @@ Taylor Otwell
 
 ---
 
-Via： https://my.oschina.net/zgldh/blog/389246 *** (收集只是为了更好阅读，感谢译者！)***
+Via： https://my.oschina.net/zgldh/blog/389246 ***(收集只是为了更好阅读，感谢译者！)***
+
+> 提示：Git clone 到本地用 Gitbook 阅读体验更佳。
