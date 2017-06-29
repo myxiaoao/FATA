@@ -1,0 +1,954 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>1.4 Too Much Java? 太像Java了？ · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="1.3_Take_It_further.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Author's Note
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    1 Dependency Injection 依赖注入
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="1.1_The_Problem.html">
+            
+                <a href="1.1_The_Problem.html">
+            
+                    
+                    1.1 The Problem 遇到的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="1.2_Build_A_Contract.html">
+            
+                <a href="1.2_Build_A_Contract.html">
+            
+                    
+                    1.2 Build A Contract 建立约定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="1.3_Take_It_further.html">
+            
+                <a href="1.3_Take_It_further.html">
+            
+                    
+                    1.3 Take It further 更进一步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.4" data-path="1.4_Too_Much_Java.html">
+            
+                <a href="1.4_Too_Much_Java.html">
+            
+                    
+                    1.4 Too Much Java? 太像Java了？
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    2 The IoC Container 控制反转容器
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="2.1_Basic_Binding.html">
+            
+                <a href="2.1_Basic_Binding.html">
+            
+                    
+                    2.1 Basic Binding 基础绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="2.2_Reflective_Resolution.html">
+            
+                <a href="2.2_Reflective_Resolution.html">
+            
+                    
+                    2.2 Reflective Resolution 反射解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    3 Interface As Contract 接口约定
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="3.1_Strong_Typing_&_Water_Fowl.html">
+            
+                <a href="3.1_Strong_Typing_&_Water_Fowl.html">
+            
+                    
+                    3.1 Strong Typing & Water Fowl 强类型和小鸭子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="3.2_A_Contract_Example.html">
+            
+                <a href="3.2_A_Contract_Example.html">
+            
+                    
+                    3.2 A Contract Example 约定的范例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="3.3_Interface_&_Team_Development.html">
+            
+                <a href="3.3_Interface_&_Team_Development.html">
+            
+                    
+                    3.3 Interface & Team Development 接口与团队开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    4 Service Provider 服务提供者
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="4.1_As_Bootstrapper.html">
+            
+                <a href="4.1_As_Bootstrapper.html">
+            
+                    
+                    4.1 As Bootstrapper 他是引导程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="4.2_As_Organizer.html">
+            
+                <a href="4.2_As_Organizer.html">
+            
+                    
+                    4.2 As Organizer 作为管理工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="4.3_Booting_Providers.html">
+            
+                <a href="4.3_Booting_Providers.html">
+            
+                    
+                    4.3 Booting Providers 服务提供者的启动过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="4.4_Providing_The_Core.html">
+            
+                <a href="4.4_Providing_The_Core.html">
+            
+                    
+                    4.4 Providing The Core 核心也是服务提供者的模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    5 Application Structure 应用结构
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="5.1_Introduction.html">
+            
+                <a href="5.1_Introduction.html">
+            
+                    
+                    5.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="5.2_MVC_Is_Killing_You.html">
+            
+                <a href="5.2_MVC_Is_Killing_You.html">
+            
+                    
+                    5.2 MVC Is Killing You MVC是慢性谋杀
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="5.3_Bye_Models.html">
+            
+                <a href="5.3_Bye_Models.html">
+            
+                    
+                    5.3 Bye, Bye Models 再见，模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="5.4_It's_All_About_The_Layers.html">
+            
+                <a href="5.4_It's_All_About_The_Layers.html">
+            
+                    
+                    5.4 It's All About The Layers 核心思想就是分层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="5.5_Where_To_Put_Stuff.html">
+            
+                <a href="5.5_Where_To_Put_Stuff.html">
+            
+                    
+                    5.5 Where To Put "Stuff" 东西都放哪儿？
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    6 Applied Architecture: Decoupling Handles 实用做法：解耦处理函数
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="6.1_Introduction.html">
+            
+                <a href="6.1_Introduction.html">
+            
+                    
+                    6.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="6.2_Decoupling_Handlers.html">
+            
+                <a href="6.2_Decoupling_Handlers.html">
+            
+                    
+                    6.2 Decoupling Handlers 解耦处理函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="6.3_Other_Handlers.html">
+            
+                <a href="6.3_Other_Handlers.html">
+            
+                    
+                    6.3 Other Handlers 其他处理函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    7 Extending The Framework 扩展框架
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="7.1_Introduction.html">
+            
+                <a href="7.1_Introduction.html">
+            
+                    
+                    7.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="7.2_Managers_&_Factories.html">
+            
+                <a href="7.2_Managers_&_Factories.html">
+            
+                    
+                    7.2 Managers & Factories 管理者和工厂
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="7.3_Cache.html">
+            
+                <a href="7.3_Cache.html">
+            
+                    
+                    7.3 Cache 缓存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="7.4_Session.html">
+            
+                <a href="7.4_Session.html">
+            
+                    
+                    7.4 Session 会话
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="7.5_Authentication.html">
+            
+                <a href="7.5_Authentication.html">
+            
+                    
+                    7.5 Authentication 身份认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="7.6_IoC_Based_Extension.html">
+            
+                <a href="7.6_IoC_Based_Extension.html">
+            
+                    
+                    7.6 IoC Based Extension 使用容器进行扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="7.7_Request_Extension.html">
+            
+                <a href="7.7_Request_Extension.html">
+            
+                    
+                    7.7 Request Extension 请求的扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    8 Single Responsibility Principle 单一职责原则
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="8.1_Introduction.html">
+            
+                <a href="8.1_Introduction.html">
+            
+                    
+                    8.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="8.2_In_Action.html">
+            
+                <a href="8.2_In_Action.html">
+            
+                    
+                    8.2 In Action 实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    9 Open Closed Principle 开放封闭原则
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="9.1_Introduction.html">
+            
+                <a href="9.1_Introduction.html">
+            
+                    
+                    9.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="9.2_In_Action.html">
+            
+                <a href="9.2_In_Action.html">
+            
+                    
+                    9.2 In Action 实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    10 Liskov Substitution Principle 里氏替换原则
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="10.1_Introduction.html">
+            
+                <a href="10.1_Introduction.html">
+            
+                    
+                    10.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="10.2_In_Action.html">
+            
+                <a href="10.2_In_Action.html">
+            
+                    
+                    10.2 In Action 实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    11 Interface Segregation Principle 接口隔离原则
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="11.1_Introduction.html">
+            
+                <a href="11.1_Introduction.html">
+            
+                    
+                    11.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="11.2_In_Action.html">
+            
+                <a href="11.2_In_Action.html">
+            
+                    
+                    11.2 In Action 实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" >
+            
+                <span>
+            
+                    
+                    12 Dependency Inversion Principle 依赖反转原则
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="12.1_Introduction.html">
+            
+                <a href="12.1_Introduction.html">
+            
+                    
+                    12.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="12.2_In_Action.html">
+            
+                <a href="12.2_In_Action.html">
+            
+                    
+                    12.2 In Action 实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >1.4 Too Much Java? 太像Java了？</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="too-much-java-&#x592A;&#x50CF;-java-&#x4E86;&#xFF1F;">Too Much Java? &#x592A;&#x50CF; Java &#x4E86;&#xFF1F;</h2>
+<p>A common criticism of use of interfaces in PHP is that it makes your code too much like &quot;Java&quot;. What people mean is that it makes the code very verbose. You must define an interface and an implementation, which leads to a few extra key-strokes.</p>
+<p>&#x6709;&#x4EBA;&#x4F1A;&#x8BF4;&#x4F7F;&#x7528;&#x63A5;&#x53E3;&#x8BA9; PHP &#x4EE3;&#x7801;&#x770B;&#x4E0A;&#x53BB;&#x592A;&#x50CF; Java &#x4E86;&#x2014;&#x2014;&#x5373;&#x4EE3;&#x7801;&#x592A;&#x7F57;&#x55E6;&#x4E86;&#x2014;&#x2014;&#x4F60;&#x5FC5;&#x987B;&#x5B9A;&#x4E49;&#x63A5;&#x53E3;&#x7136;&#x540E;&#x5B9E;&#x73B0;&#x5B83;&#xFF0C;&#x8981;&#x591A;&#x6309;&#x597D;&#x591A;&#x4E0B;&#x952E;&#x76D8;&#x3002;</p>
+<p>For small, simple applications, this criticism is probably valid. Interfaces are often unnecessary in these applications, and it is &quot;OK&quot; to just couple yourself to an implementation you know won&apos;t change. There is no need to use interfaces if you are certain your implementation will not change. Architecture astronauts will tell you that you can &quot;never be certain&quot;. But, let&apos;s face it, sometimes you are.</p>
+<p>&#x5BF9;&#x4E8E;&#x5C0F;&#x800C;&#x7B80;&#x5355;&#x7684;&#x5E94;&#x7528;&#x6765;&#x8BF4;&#xFF0C;&#x4EE5;&#x4E0A;&#x8BF4;&#x6CD5;&#x4E5F;&#x5BF9;&#x3002;&#x63A5;&#x53E3;&#x901A;&#x5E38;&#x662F;&#x4E0D;&#x5FC5;&#x8981;&#x7684;&#x3002;&#x5C06;&#x4EE3;&#x7801;&#x8026;&#x5408;&#x5230;&#x90A3;&#x4E9B;&#x4F60;&#x8BA4;&#x4E3A;&#x4E0D;&#x4F1A;&#x6539;&#x53D8;&#x7684;&#x5730;&#x65B9;&#x4E5F;&#x662F;&#x53EF;&#x4EE5;&#x7684;&#x3002;&#x5728;&#x4F60;&#x786E;&#x4FE1;&#x4E0D;&#x4F1A;&#x6539;&#x53D8;&#x7684;&#x5730;&#x65B9;&#x5C31;&#x6CA1;&#x6709;&#x5FC5;&#x8981;&#x4F7F;&#x7528;&#x63A5;&#x53E3;&#x4E86;&#x3002;&#x67B6;&#x6784;&#x5E08;&#x8BF4;&#x201C;&#x4E0D;&#x4F1A;&#x6539;&#x53D8;&#x7684;&#x5730;&#x65B9;&#x662F;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x201D;&#x3002;&#x4E0D;&#x8FC7;&#x8BDD;&#x8BF4;&#x56DE;&#x6765;&#xFF0C;&#x6709;&#x65F6;&#x5019;&#x7684;&#x786E;&#x4E0D;&#x4F1A;&#x6539;&#x3002;</p>
+<p>Interfaces are very helpful in large applications, and the extra key-strokes pale in comparison to the flexibility and testability you will gain. The ability to quickly swap implementations of a contract will &quot;wow&quot; your manager, and allow you to write code that easily adapts to change.</p>
+<p>&#x5728;&#x5927;&#x578B;&#x5E94;&#x7528;&#x4E2D;&#x63A5;&#x53E3;&#x662F;&#x5F88;&#x6709;&#x5E2E;&#x52A9;&#x7684;&#x3002;&#x548C;&#x63D0;&#x5347;&#x7684;&#x4EE3;&#x7801;&#x7075;&#x6D3B;&#x6027;&#x3001;&#x53EF;&#x6D4B;&#x8BD5;&#x6027;&#x6BD4;&#x8D77;&#x6765;&#xFF0C;&#x591A;&#x6572;&#x952E;&#x76D8;&#x8D39;&#x7684;&#x529F;&#x592B;&#x5C31;&#x5FAE;&#x4E0D;&#x8DB3;&#x9053;&#x4E86;&#x3002;&#x5F53;&#x4F60;&#x8FC5;&#x901F;&#x7684;&#x5207;&#x6362;&#x4E86;&#x4EE3;&#x7801;&#x5B9E;&#x73B0;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F60;&#x7684;&#x7ECF;&#x7406;&#x4E00;&#x5B9A;&#x4F1A;&#x88AB;&#x4F60;&#x7684;&#x795E;&#x901F;&#x5413;&#x4E00;&#x8DF3;&#x7684;&#x3002;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x5199;&#x51FA;&#x66F4;&#x9002;&#x5E94;&#x53D8;&#x5316;&#x7684;&#x4EE3;&#x7801;&#x3002;</p>
+<p>So, in conclusion, keep in mind that this book presents a very &quot;pure&quot; architecture. If you need to scale it back for a small application, don&apos;t feel guilty. Remember, we&apos;re all trying to &quot;code happy&quot;. If you&apos;re not enjoying what you&apos;re doing or you are programming out of guilt. step back and re-evaluate.</p>
+<p>&#x603B;&#x800C;&#x8A00;&#x4E4B;&#xFF0C; &#x8BB0;&#x4F4F;&#x672C;&#x4E66;&#x63D0;&#x5021;&#x201C;&#x7B80;&#x5355;&#x201D;&#x67B6;&#x6784;&#x3002;&#x5982;&#x679C;&#x4F60;&#x5728;&#x5199;&#x5C0F;&#x7A0B;&#x5E8F;&#x7684;&#x65F6;&#x5019;&#x65E0;&#x6CD5;&#x9075;&#x5B88;&#x63A5;&#x53E3;&#x539F;&#x5219;&#xFF0C;&#x522B;&#x89C9;&#x5F97;&#x4E0D;&#x597D;&#x610F;&#x601D;&#x3002; &#x8981;&#x8BB0;&#x4F4F;&#x6211;&#x4EEC;&#x5199;&#x4EE3;&#x7801;&#x662F;&#x8981;&#x5FEB;&#x4E50;&#x7684;&#x5199;&#x3002;&#x5982;&#x679C;&#x4F60;&#x4E0D;&#x559C;&#x6B22;&#x5199;&#x63A5;&#x53E3;&#xFF0C;&#x90A3;&#x5C31;&#x5148;&#x7B80;&#x5355;&#x7684;&#x5199;&#x4EE3;&#x7801;&#x5427;&#x3002;&#x65E5;&#x540E;&#x518D;&#x7CBE;&#x8FDB;&#x5373;&#x53EF;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="1.3_Take_It_further.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 1.3 Take It further 更进一步">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1.4 Too Much Java? 太像Java了？","level":"1.2.4","depth":2,"next":{"title":"2 The IoC Container 控制反转容器","level":"1.3","depth":1,"ref":"","articles":[{"title":"2.1 Basic Binding 基础绑定","level":"1.3.1","depth":2,"path":"page/2.1_Basic_Binding.md","ref":"./page/2.1_Basic_Binding.md","articles":[]},{"title":"2.2 Reflective Resolution 反射解决方案","level":"1.3.2","depth":2,"path":"page/2.2_Reflective_Resolution.md","ref":"./page/2.2_Reflective_Resolution.md","articles":[]}]},"previous":{"title":"1.3 Take It further 更进一步","level":"1.2.3","depth":2,"path":"page/1.3_Take_It_further.md","ref":"./page/1.3_Take_It_further.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"page/1.4_Too_Much_Java.md","mtime":"2017-06-29T04:04:17.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-29T04:15:21.787Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,1016 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>12.2 In Action 实践 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="12.1_Introduction.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Author's Note
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    1 Dependency Injection 依赖注入
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="1.1_The_Problem.html">
+            
+                <a href="1.1_The_Problem.html">
+            
+                    
+                    1.1 The Problem 遇到的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="1.2_Build_A_Contract.html">
+            
+                <a href="1.2_Build_A_Contract.html">
+            
+                    
+                    1.2 Build A Contract 建立约定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="1.3_Take_It_further.html">
+            
+                <a href="1.3_Take_It_further.html">
+            
+                    
+                    1.3 Take It further 更进一步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="1.4_Too_Much_Java.html">
+            
+                <a href="1.4_Too_Much_Java.html">
+            
+                    
+                    1.4 Too Much Java? 太像Java了？
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    2 The IoC Container 控制反转容器
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="2.1_Basic_Binding.html">
+            
+                <a href="2.1_Basic_Binding.html">
+            
+                    
+                    2.1 Basic Binding 基础绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="2.2_Reflective_Resolution.html">
+            
+                <a href="2.2_Reflective_Resolution.html">
+            
+                    
+                    2.2 Reflective Resolution 反射解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    3 Interface As Contract 接口约定
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="3.1_Strong_Typing_&_Water_Fowl.html">
+            
+                <a href="3.1_Strong_Typing_&_Water_Fowl.html">
+            
+                    
+                    3.1 Strong Typing & Water Fowl 强类型和小鸭子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="3.2_A_Contract_Example.html">
+            
+                <a href="3.2_A_Contract_Example.html">
+            
+                    
+                    3.2 A Contract Example 约定的范例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="3.3_Interface_&_Team_Development.html">
+            
+                <a href="3.3_Interface_&_Team_Development.html">
+            
+                    
+                    3.3 Interface & Team Development 接口与团队开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    4 Service Provider 服务提供者
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="4.1_As_Bootstrapper.html">
+            
+                <a href="4.1_As_Bootstrapper.html">
+            
+                    
+                    4.1 As Bootstrapper 他是引导程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="4.2_As_Organizer.html">
+            
+                <a href="4.2_As_Organizer.html">
+            
+                    
+                    4.2 As Organizer 作为管理工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="4.3_Booting_Providers.html">
+            
+                <a href="4.3_Booting_Providers.html">
+            
+                    
+                    4.3 Booting Providers 服务提供者的启动过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="4.4_Providing_The_Core.html">
+            
+                <a href="4.4_Providing_The_Core.html">
+            
+                    
+                    4.4 Providing The Core 核心也是服务提供者的模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    5 Application Structure 应用结构
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="5.1_Introduction.html">
+            
+                <a href="5.1_Introduction.html">
+            
+                    
+                    5.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="5.2_MVC_Is_Killing_You.html">
+            
+                <a href="5.2_MVC_Is_Killing_You.html">
+            
+                    
+                    5.2 MVC Is Killing You MVC是慢性谋杀
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="5.3_Bye_Models.html">
+            
+                <a href="5.3_Bye_Models.html">
+            
+                    
+                    5.3 Bye, Bye Models 再见，模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="5.4_It's_All_About_The_Layers.html">
+            
+                <a href="5.4_It's_All_About_The_Layers.html">
+            
+                    
+                    5.4 It's All About The Layers 核心思想就是分层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="5.5_Where_To_Put_Stuff.html">
+            
+                <a href="5.5_Where_To_Put_Stuff.html">
+            
+                    
+                    5.5 Where To Put "Stuff" 东西都放哪儿？
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    6 Applied Architecture: Decoupling Handles 实用做法：解耦处理函数
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="6.1_Introduction.html">
+            
+                <a href="6.1_Introduction.html">
+            
+                    
+                    6.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="6.2_Decoupling_Handlers.html">
+            
+                <a href="6.2_Decoupling_Handlers.html">
+            
+                    
+                    6.2 Decoupling Handlers 解耦处理函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="6.3_Other_Handlers.html">
+            
+                <a href="6.3_Other_Handlers.html">
+            
+                    
+                    6.3 Other Handlers 其他处理函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    7 Extending The Framework 扩展框架
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="7.1_Introduction.html">
+            
+                <a href="7.1_Introduction.html">
+            
+                    
+                    7.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="7.2_Managers_&_Factories.html">
+            
+                <a href="7.2_Managers_&_Factories.html">
+            
+                    
+                    7.2 Managers & Factories 管理者和工厂
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="7.3_Cache.html">
+            
+                <a href="7.3_Cache.html">
+            
+                    
+                    7.3 Cache 缓存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="7.4_Session.html">
+            
+                <a href="7.4_Session.html">
+            
+                    
+                    7.4 Session 会话
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="7.5_Authentication.html">
+            
+                <a href="7.5_Authentication.html">
+            
+                    
+                    7.5 Authentication 身份认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="7.6_IoC_Based_Extension.html">
+            
+                <a href="7.6_IoC_Based_Extension.html">
+            
+                    
+                    7.6 IoC Based Extension 使用容器进行扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="7.7_Request_Extension.html">
+            
+                <a href="7.7_Request_Extension.html">
+            
+                    
+                    7.7 Request Extension 请求的扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    8 Single Responsibility Principle 单一职责原则
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="8.1_Introduction.html">
+            
+                <a href="8.1_Introduction.html">
+            
+                    
+                    8.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="8.2_In_Action.html">
+            
+                <a href="8.2_In_Action.html">
+            
+                    
+                    8.2 In Action 实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    9 Open Closed Principle 开放封闭原则
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="9.1_Introduction.html">
+            
+                <a href="9.1_Introduction.html">
+            
+                    
+                    9.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="9.2_In_Action.html">
+            
+                <a href="9.2_In_Action.html">
+            
+                    
+                    9.2 In Action 实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    10 Liskov Substitution Principle 里氏替换原则
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="10.1_Introduction.html">
+            
+                <a href="10.1_Introduction.html">
+            
+                    
+                    10.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="10.2_In_Action.html">
+            
+                <a href="10.2_In_Action.html">
+            
+                    
+                    10.2 In Action 实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    11 Interface Segregation Principle 接口隔离原则
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="11.1_Introduction.html">
+            
+                <a href="11.1_Introduction.html">
+            
+                    
+                    11.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="11.2_In_Action.html">
+            
+                <a href="11.2_In_Action.html">
+            
+                    
+                    11.2 In Action 实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" >
+            
+                <span>
+            
+                    
+                    12 Dependency Inversion Principle 依赖反转原则
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="12.1_Introduction.html">
+            
+                <a href="12.1_Introduction.html">
+            
+                    
+                    12.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.13.2" data-path="12.2_In_Action.html">
+            
+                <a href="12.2_In_Action.html">
+            
+                    
+                    12.2 In Action 实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >12.2 In Action 实践</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="in-action-&#x5B9E;&#x8DF5;">In Action &#x5B9E;&#x8DF5;</h2>
+<p>If you have already read prior chapters of this book, you already have a good grasp of the Dependency Inversion principle! To illustrate the principle, let&apos;s consider the following class:</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x5DF2;&#x7ECF;&#x8BFB;&#x8FC7;&#x4E86;&#x672C;&#x4E66;&#x524D;&#x9762;&#x51E0;&#x4E2A;&#x7AE0;&#x8282;&#xFF0C;&#x4F60;&#x5C31;&#x5DF2;&#x7ECF;&#x5F88;&#x597D;&#x638C;&#x63E1;&#x4E86;&#x4F9D;&#x8D56;&#x53CD;&#x8F6C;&#x539F;&#x5219;&#xFF01;&#x4E3A;&#x4E86;&#x8BF4;&#x660E;&#x672C;&#x539F;&#x5219;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x8003;&#x8651;&#x4E0B;&#x9762;&#x8FD9;&#x4E2A;&#x7C7B;&#xFF1A;</p>
+<pre><code>    class Authenticator {
+        public function __construct(DatabaseConnection $db)
+        {
+            $this-&gt;db = $db;
+        }
+        public function findUser($id)
+        {
+            return $this-&gt;db-&gt;exec(&apos;select * from users where id = ?&apos;, array($id));
+        }
+        public function authenticate($credentials)
+        {
+            // Authenticate the user...
+        }
+    }
+</code></pre><p>As you might have guessed, the Authenticator class is responsible for finding and authenticating users. Let&apos;s examine the constructor of this class. You will see that we are type-hinting a DatabaseConnection instance. So, we&apos;re tightly coupling our authenticator to the database, and essentially saying that users will always only be provided out of a relational SQL database. Furthermore, our high-level code (the Authenticator) is directly depending on low-level code (the DatabaseConnection).</p>
+<p>&#x4F60;&#x53EF;&#x80FD;&#x731C;&#x5230;&#x4E86;&#xFF0C;Authenticator &#x5C31;&#x662F;&#x7528;&#x6765;&#x67E5;&#x627E;&#x548C;&#x9A8C;&#x8BC1;&#x7528;&#x6237;&#x7684;&#x3002;&#x7EE7;&#x7EED;&#x7814;&#x7A76;&#x5B83;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;&#x6211;&#x4EEC;&#x53D1;&#x73B0;&#x5B83;&#x4F7F;&#x7528;&#x4E86;&#x7C7B;&#x578B;&#x63D0;&#x793A;&#xFF0C;&#x8981;&#x6C42;&#x4F20;&#x5165;&#x4E00;&#x4E2A; DatabaseConnection &#x5BF9;&#x8C61;&#xFF0C;&#x6240;&#x4EE5;&#x8BE5;&#x9A8C;&#x8BC1;&#x7C7B;&#x548C;&#x6570;&#x636E;&#x5E93;&#x88AB;&#x7D27;&#x5BC6;&#x7684;&#x8054;&#x7CFB;&#x5728;&#x4E00;&#x8D77;&#x3002;&#x800C;&#x4E14;&#x57FA;&#x672C;&#x4E0A;&#x8BB2;&#xFF0C;&#x8FD9;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x8FD8;&#x53EA;&#x80FD;&#x662F;&#x5173;&#x7CFB;&#x6570;&#x636E;&#x5E93;&#x3002;&#x4ECE;&#x800C;&#x53EF;&#x77E5;&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x9AD8;&#x7EA7;&#x4EE3;&#x7801;&#xFF08;Authenticator&#xFF09;&#x76F4;&#x63A5;&#x7684;&#x4F9D;&#x8D56;&#x7740;&#x4F4E;&#x7EA7;&#x4EE3;&#x7801;&#xFF08;DatabaseConnection&#xFF09;&#x3002;</p>
+<p>First, let&apos;s discuss &quot;high-level&quot; and &quot;low-level&quot; code. Low-level code implements basic operations like reading files from a disk, or interaction with a database. High-level code encapsulates complex logic and relies on the low-level code to function, but should not be directly coupled to it. Instead, the high-level code should depend on an abstraction that sits on top of the low-level code, such as an interface. Not only that, but the low-level code should also depend upon an abstraction. So, let&apos;s write an interface that we can use within our Authenticator:</p>
+<p>&#x9996;&#x5148;&#x6211;&#x4EEC;&#x6765;&#x8C08;&#x8C08;&#x201C;&#x9AD8;&#x7EA7;&#x4EE3;&#x7801;&#x201D;&#x548C;&#x201C;&#x4F4E;&#x7EA7;&#x4EE3;&#x7801;&#x201D;&#x3002;&#x4F4E;&#x7EA7;&#x4EE3;&#x7801;&#x7528;&#x4E8E;&#x5B9E;&#x73B0;&#x57FA;&#x672C;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x6BD4;&#x5982;&#x4ECE;&#x78C1;&#x76D8;&#x8BFB;&#x6587;&#x4EF6;&#xFF0C;&#x64CD;&#x4F5C;&#x6570;&#x636E;&#x5E93;&#x7B49;&#x3002;&#x9AD8;&#x7EA7;&#x4EE3;&#x7801;&#x7528;&#x4E8E;&#x5C01;&#x88C5;&#x590D;&#x6742;&#x7684;&#x903B;&#x8F91;&#xFF0C;&#x5B83;&#x4EEC;&#x4F9D;&#x9760;&#x4F4E;&#x7EA7;&#x4EE3;&#x7801;&#x6765;&#x8FBE;&#x5230;&#x529F;&#x80FD;&#x76EE;&#x7684;&#xFF0C;&#x4F46;&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x548C;&#x4F4E;&#x7EA7;&#x4EE3;&#x7801;&#x8026;&#x5408;&#x5728;&#x4E00;&#x8D77;&#x3002;&#x53D6;&#x800C;&#x4EE3;&#x4E4B;&#x7684;&#x662F;&#x9AD8;&#x7EA7;&#x4EE3;&#x7801;&#x5E94;&#x8BE5;&#x4F9D;&#x8D56;&#x7740;&#x4F4E;&#x7EA7;&#x4EE3;&#x7801;&#x7684;&#x9876;&#x5C42;&#x62BD;&#x8C61;&#xFF0C;&#x6BD4;&#x5982;&#x63A5;&#x53E3;&#x3002;&#x4E0D;&#x4EC5;&#x5982;&#x6B64;&#xFF0C;&#x4F4E;&#x7EA7;&#x4EE3;&#x7801;&#x4E5F;&#x5E94;&#x5F53;&#x4F9D;&#x8D56;&#x7740;&#x62BD;&#x8C61;&#x3002; &#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x6765;&#x5199;&#x4E2A; Authenticator &#x53EF;&#x4EE5;&#x7528;&#x7684;&#x63A5;&#x53E3;&#xFF1A;</p>
+<pre><code>    interface UserProviderInterface {
+        public function find($id);
+        public function findByUsername($username);
+    }
+</code></pre><p>Next let&apos;s inject an implementation of this interface into our Authenticator:</p>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x6211;&#x4EEC;&#x5C06;&#x8BE5;&#x63A5;&#x53E3;&#x6CE8;&#x5165;&#x5230; Authenticator &#x91CC;&#x9762;&#xFF1A;</p>
+<pre><code>    class Authenticator {
+        public function __construct(UserProviderInterface $users, HasherInterface $hash)
+        {
+            $this-&gt;hash = $hash;
+            $this-&gt;users = $users;
+        }
+        public function findUser($id)
+        {
+            return $this-&gt;users-&gt;find($id);
+        }
+        public function authenticate($credentials)
+        {
+            $user = $this-&gt;users-&gt;findByUsername($credentials[&apos;username&apos;]);
+            return $this-&gt;hash-&gt;make($credentials[&apos;password&apos;]) == $user-&gt;password;
+        }
+    }
+</code></pre><p>After making these changes, our Authenticator now relies on two high-level abstractions: UserProviderInterface and HasherInterface. We are free to inject any implementation of these interfaces into the Authenticator. For example, if our users are now stored in Redis, we can write a RedisUserProvider which implements the UserProviderInterface contract. The Authenticator is no longer depending directly on low-level storage operations.</p>
+<p>&#x505A;&#x4E86;&#x8FD9;&#x4E9B;&#x5C0F;&#x6539;&#x52A8;&#x540E;&#xFF0C;Authenticator &#x73B0;&#x5728;&#x4F9D;&#x8D56;&#x4E8E;&#x4E24;&#x4E2A;&#x9AD8;&#x7EA7;&#x62BD;&#x8C61;&#xFF1A;UserProviderInterface &#x548C; HasherInterface&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5411; Authenticator &#x81EA;&#x7531;&#x7684;&#x6CE8;&#x5165;&#x8FD9;&#x4FE9;&#x63A5;&#x53E3;&#x7684;&#x4EFB;&#x4F55;&#x5B9E;&#x73B0;&#x7C7B;&#x3002;&#x6BD4;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x7684;&#x7528;&#x6237;&#x5B58;&#x50A8;&#x5728; Redis &#x91CC;&#x9762;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x5199;&#x4E00;&#x4E2A; RedisUserProvider &#x6765;&#x5B9E;&#x73B0; UserProviderInterface &#x63A5;&#x53E3;&#x5373;&#x53EF;&#x3002;Authenticator &#x4E0D;&#x518D;&#x4F9D;&#x8D56;&#x7740;&#x5177;&#x4F53;&#x7684;&#x4F4E;&#x7EA7;&#x522B;&#x7684;&#x5B58;&#x50A8;&#x64CD;&#x4F5C;&#x4E86;&#x3002;</p>
+<p>Furthermore, our low-level code now depends on the high-level UserProviderInterface abstraction, since it implements the interface itself:</p>
+<p>&#x6B64;&#x5916;&#xFF0C;&#x7531;&#x4E8E;&#x6211;&#x4EEC;&#x7684;&#x4F4E;&#x7EA7;&#x522B;&#x4EE3;&#x7801;&#x5B9E;&#x73B0;&#x4E86; UserProviderInterface &#x63A5;&#x53E3;&#xFF0C;&#x5219;&#x6211;&#x4EEC;&#x8BF4;&#x8BE5;&#x4F4E;&#x7EA7;&#x4EE3;&#x7801;&#x4F9D;&#x8D56;&#x7740;&#x8FD9;&#x4E2A;&#x63A5;&#x53E3;&#x3002;</p>
+<pre><code>    class RedisUserProvider implements UserProviderInterface {
+        public function __construct(RedisConnection $redis)
+        {
+            $this-&gt;redis = $redis;
+        }
+        public function find($id)
+        {
+            $this-&gt;redis-&gt;get(&apos;users:&apos;.$id);
+        }
+        public function findByUsername($username)
+        {
+            $id = $this-&gt;redis-&gt;get(&apos;user:id:&apos;.$username);
+            return $this-&gt;find($id);
+        }
+    }
+</code></pre><blockquote>
+<h3 id="inverted-thinking-&#x53CD;&#x8F6C;&#x7684;&#x601D;&#x7EF4;">Inverted Thinking &#x53CD;&#x8F6C;&#x7684;&#x601D;&#x7EF4;</h3>
+<p>Applying this principle inverts the way many developers design applications. Instead of coupling high-level code directly to low-level code in a &quot;top-down&quot; fashion, this principle states that both high and low-level code depend upon a high-level abstraction.</p>
+<p>&#x8D2F;&#x5F7B;&#x8FD9;&#x4E00;&#x539F;&#x5219;&#x4F1A;&#x53CD;&#x8F6C;&#x597D;&#x591A;&#x5F00;&#x53D1;&#x8005;&#x8BBE;&#x8BA1;&#x5E94;&#x7528;&#x7684;&#x65B9;&#x5F0F;&#x3002;&#x4E0D;&#x518D;&#x5C06;&#x9AD8;&#x7EA7;&#x4EE3;&#x7801;&#x76F4;&#x63A5;&#x548C;&#x4F4E;&#x7EA7;&#x4EE3;&#x7801;&#x4EE5;&#x201C;&#x81EA;&#x4E0A;&#x800C;&#x4E0B;&#x201D;&#x7684;&#x65B9;&#x5F0F;&#x8026;&#x5408;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x8FD9;&#x4E2A;&#x539F;&#x5219;&#x63D0;&#x51FA;&#x65E0;&#x8BBA;&#x9AD8;&#x7EA7;&#x8FD8;&#x662F;&#x4F4E;&#x7EA7;&#x4EE3;&#x7801;&#x90FD;&#x8981;&#x4F9D;&#x8D56;&#x4E8E;&#x4E00;&#x4E2A;&#x9AD8;&#x5C42;&#x6B21;&#x7684;&#x62BD;&#x8C61;&#x3002;</p>
+</blockquote>
+<p>Before we &quot;inverted&quot; the dependencies of our Authenticator, it could not be used with anything other than a database storage system. If we changed storage system, our Authenticator would also have to be modified, in violation of the Open Closed principle. Again, as we have seen before, multiple principles usually stand or fall together.</p>
+<p>&#x5728;&#x6211;&#x4EEC;&#x6CA1;&#x6709;&#x53CD;&#x8F6C; Authenticator &#x7684;&#x4F9D;&#x8D56;&#x4E4B;&#x524D;&#xFF0C;&#x5B83;&#x9664;&#x4E86;&#x4F7F;&#x7528;&#x6570;&#x636E;&#x5E93;&#x5B58;&#x50A8;&#x7CFB;&#x7EDF;&#x522B;&#x65E0;&#x9009;&#x62E9;&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x6539;&#x53D8;&#x4E86;&#x5B58;&#x50A8;&#x7CFB;&#x7EDF;&#xFF0C;Authenticator &#x4E5F;&#x9700;&#x8981;&#x88AB;&#x4FEE;&#x6539;&#xFF0C;&#x8FD9;&#x5C31;&#x8FDD;&#x80CC;&#x4E86;&#x5F00;&#x653E;&#x5C01;&#x95ED;&#x539F;&#x5219;&#x3002;&#x6211;&#x4EEC;&#x53C8;&#x4E00;&#x6B21;&#x770B;&#x5230;&#xFF0C;&#x8FD9;&#x4E9B;&#x8BBE;&#x8BA1;&#x539F;&#x5219;&#x901A;&#x5E38;&#x4E00;&#x8363;&#x4FF1;&#x8363;&#x4E00;&#x635F;&#x4FF1;&#x635F;&#x3002;</p>
+<p>After forcing the Authenticator to depend upon an abstraction over the storage layer, we can use it with any storage system that implements our UserProviderInterface contract without any modifications to the Authenticator itself. The conventional dependency chain has been inverted and our code is much more flexible and welcoming of change!</p>
+<p>&#x901A;&#x8FC7;&#x5F3A;&#x5236;&#x8BA9; Authenticator &#x4F9D;&#x8D56;&#x7740;&#x4E00;&#x4E2A;&#x5B58;&#x50A8;&#x62BD;&#x8C61;&#x5C42;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4EFB;&#x4F55;&#x5B9E;&#x73B0;&#x4E86; UserProviderInterface &#x63A5;&#x53E3;&#x7684;&#x5B58;&#x50A8;&#x7CFB;&#x7EDF;&#xFF0C;&#x4E14;&#x4E0D;&#x7528;&#x5BF9; Authenticator &#x672C;&#x8EAB;&#x505A;&#x4EFB;&#x4F55;&#x4FEE;&#x6539;&#x3002;&#x4F20;&#x7EDF;&#x7684;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#x94FE;&#x5DF2;&#x7ECF;&#x88AB;&#x53CD;&#x8F6C;&#x4E86;&#xFF0C;&#x4EE3;&#x7801;&#x53D8;&#x5F97;&#x66F4;&#x7075;&#x6D3B;&#xFF0C;&#x66F4;&#x52A0;&#x65E0;&#x60E7;&#x53D8;&#x5316;&#xFF01;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="12.1_Introduction.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 12.1 Introduction 介绍">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"12.2 In Action 实践","level":"1.13.2","depth":2,"previous":{"title":"12.1 Introduction 介绍","level":"1.13.1","depth":2,"path":"page/12.1_Introduction.md","ref":"./page/12.1_Introduction.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"page/12.2_In_Action.md","mtime":"2017-06-29T04:04:17.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-29T04:15:21.787Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

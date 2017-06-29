@@ -1,0 +1,963 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>7.7 Request Extension 请求的扩展 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="7.6_IoC_Based_Extension.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Author's Note
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    1 Dependency Injection 依赖注入
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="1.1_The_Problem.html">
+            
+                <a href="1.1_The_Problem.html">
+            
+                    
+                    1.1 The Problem 遇到的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="1.2_Build_A_Contract.html">
+            
+                <a href="1.2_Build_A_Contract.html">
+            
+                    
+                    1.2 Build A Contract 建立约定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="1.3_Take_It_further.html">
+            
+                <a href="1.3_Take_It_further.html">
+            
+                    
+                    1.3 Take It further 更进一步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="1.4_Too_Much_Java.html">
+            
+                <a href="1.4_Too_Much_Java.html">
+            
+                    
+                    1.4 Too Much Java? 太像Java了？
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    2 The IoC Container 控制反转容器
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="2.1_Basic_Binding.html">
+            
+                <a href="2.1_Basic_Binding.html">
+            
+                    
+                    2.1 Basic Binding 基础绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="2.2_Reflective_Resolution.html">
+            
+                <a href="2.2_Reflective_Resolution.html">
+            
+                    
+                    2.2 Reflective Resolution 反射解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    3 Interface As Contract 接口约定
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="3.1_Strong_Typing_&_Water_Fowl.html">
+            
+                <a href="3.1_Strong_Typing_&_Water_Fowl.html">
+            
+                    
+                    3.1 Strong Typing & Water Fowl 强类型和小鸭子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="3.2_A_Contract_Example.html">
+            
+                <a href="3.2_A_Contract_Example.html">
+            
+                    
+                    3.2 A Contract Example 约定的范例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="3.3_Interface_&_Team_Development.html">
+            
+                <a href="3.3_Interface_&_Team_Development.html">
+            
+                    
+                    3.3 Interface & Team Development 接口与团队开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    4 Service Provider 服务提供者
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="4.1_As_Bootstrapper.html">
+            
+                <a href="4.1_As_Bootstrapper.html">
+            
+                    
+                    4.1 As Bootstrapper 他是引导程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="4.2_As_Organizer.html">
+            
+                <a href="4.2_As_Organizer.html">
+            
+                    
+                    4.2 As Organizer 作为管理工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="4.3_Booting_Providers.html">
+            
+                <a href="4.3_Booting_Providers.html">
+            
+                    
+                    4.3 Booting Providers 服务提供者的启动过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="4.4_Providing_The_Core.html">
+            
+                <a href="4.4_Providing_The_Core.html">
+            
+                    
+                    4.4 Providing The Core 核心也是服务提供者的模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    5 Application Structure 应用结构
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="5.1_Introduction.html">
+            
+                <a href="5.1_Introduction.html">
+            
+                    
+                    5.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="5.2_MVC_Is_Killing_You.html">
+            
+                <a href="5.2_MVC_Is_Killing_You.html">
+            
+                    
+                    5.2 MVC Is Killing You MVC是慢性谋杀
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="5.3_Bye_Models.html">
+            
+                <a href="5.3_Bye_Models.html">
+            
+                    
+                    5.3 Bye, Bye Models 再见，模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="5.4_It's_All_About_The_Layers.html">
+            
+                <a href="5.4_It's_All_About_The_Layers.html">
+            
+                    
+                    5.4 It's All About The Layers 核心思想就是分层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="5.5_Where_To_Put_Stuff.html">
+            
+                <a href="5.5_Where_To_Put_Stuff.html">
+            
+                    
+                    5.5 Where To Put "Stuff" 东西都放哪儿？
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    6 Applied Architecture: Decoupling Handles 实用做法：解耦处理函数
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="6.1_Introduction.html">
+            
+                <a href="6.1_Introduction.html">
+            
+                    
+                    6.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="6.2_Decoupling_Handlers.html">
+            
+                <a href="6.2_Decoupling_Handlers.html">
+            
+                    
+                    6.2 Decoupling Handlers 解耦处理函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="6.3_Other_Handlers.html">
+            
+                <a href="6.3_Other_Handlers.html">
+            
+                    
+                    6.3 Other Handlers 其他处理函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    7 Extending The Framework 扩展框架
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="7.1_Introduction.html">
+            
+                <a href="7.1_Introduction.html">
+            
+                    
+                    7.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="7.2_Managers_&_Factories.html">
+            
+                <a href="7.2_Managers_&_Factories.html">
+            
+                    
+                    7.2 Managers & Factories 管理者和工厂
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="7.3_Cache.html">
+            
+                <a href="7.3_Cache.html">
+            
+                    
+                    7.3 Cache 缓存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="7.4_Session.html">
+            
+                <a href="7.4_Session.html">
+            
+                    
+                    7.4 Session 会话
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="7.5_Authentication.html">
+            
+                <a href="7.5_Authentication.html">
+            
+                    
+                    7.5 Authentication 身份认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="7.6_IoC_Based_Extension.html">
+            
+                <a href="7.6_IoC_Based_Extension.html">
+            
+                    
+                    7.6 IoC Based Extension 使用容器进行扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8.7" data-path="7.7_Request_Extension.html">
+            
+                <a href="7.7_Request_Extension.html">
+            
+                    
+                    7.7 Request Extension 请求的扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    8 Single Responsibility Principle 单一职责原则
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="8.1_Introduction.html">
+            
+                <a href="8.1_Introduction.html">
+            
+                    
+                    8.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="8.2_In_Action.html">
+            
+                <a href="8.2_In_Action.html">
+            
+                    
+                    8.2 In Action 实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    9 Open Closed Principle 开放封闭原则
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="9.1_Introduction.html">
+            
+                <a href="9.1_Introduction.html">
+            
+                    
+                    9.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="9.2_In_Action.html">
+            
+                <a href="9.2_In_Action.html">
+            
+                    
+                    9.2 In Action 实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    10 Liskov Substitution Principle 里氏替换原则
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="10.1_Introduction.html">
+            
+                <a href="10.1_Introduction.html">
+            
+                    
+                    10.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="10.2_In_Action.html">
+            
+                <a href="10.2_In_Action.html">
+            
+                    
+                    10.2 In Action 实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    11 Interface Segregation Principle 接口隔离原则
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="11.1_Introduction.html">
+            
+                <a href="11.1_Introduction.html">
+            
+                    
+                    11.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="11.2_In_Action.html">
+            
+                <a href="11.2_In_Action.html">
+            
+                    
+                    11.2 In Action 实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" >
+            
+                <span>
+            
+                    
+                    12 Dependency Inversion Principle 依赖反转原则
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="12.1_Introduction.html">
+            
+                <a href="12.1_Introduction.html">
+            
+                    
+                    12.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="12.2_In_Action.html">
+            
+                <a href="12.2_In_Action.html">
+            
+                    
+                    12.2 In Action 实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >7.7 Request Extension 请求的扩展</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="request-extension-&#x8BF7;&#x6C42;&#x7684;&#x6269;&#x5C55;">Request Extension &#x8BF7;&#x6C42;&#x7684;&#x6269;&#x5C55;</h2>
+<p>Because it is such a foundational piece of the framework and is instantiated very early in the request cycle, extending the Request class works a little differently than the previous examples.</p>
+<p>&#x7531;&#x4E8E;&#x8FD9;&#x73A9;&#x610F;&#x513F;&#x662F;&#x6846;&#x67B6;&#x91CC;&#x9762;&#x975E;&#x5E38;&#x57FA;&#x7840;&#x7684;&#x90E8;&#x5206;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x8BF7;&#x6C42;&#x6D41;&#x7A0B;&#x4E2D;&#x5F88;&#x65E9;&#x5C31;&#x88AB;&#x5B9E;&#x4F8B;&#x5316;&#xFF0C;&#x6240;&#x4EE5;&#x8981;&#x6269;&#x5C55; Request &#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#x4E0E;&#x4E4B;&#x524D;&#x76F8;&#x6BD4;&#x662F;&#x6709;&#x4E9B;&#x8BB8;&#x4E0D;&#x540C;&#x7684;&#x3002;</p>
+<p>First, extend the class like normal:</p>
+<p>&#x9996;&#x5148;&#x8FD8;&#x662F;&#x8981;&#x5199;&#x4E2A;&#x5B50;&#x7C7B;&#xFF1A;</p>
+<pre><code>namespace QuickBill\Extensions;
+class Request extends \Illuminate\Http\Request {
+    // Custom, helpful methods here...
+}
+</code></pre><p>Once you have extended the class, open the bootstrap/start.php file. This file is one of the very first files to be included on each request to your application. Note that the first action performed is the creation of the Laravel $app instance:</p>
+<p>&#x5B50;&#x7C7B;&#x5199;&#x597D;&#x540E;&#xFF0C;&#x6253;&#x5F00; bootstrap/start.php &#x6587;&#x4EF6;&#x3002;&#x8BE5;&#x6587;&#x4EF6;&#x662F;&#x5E94;&#x7528;&#x7684;&#x8BF7;&#x6C42;&#x6D41;&#x7A0B;&#x4E2D;&#x6700;&#x65E9;&#x88AB;&#x8F7D;&#x5165;&#x7684;&#x51E0;&#x4E2A;&#x6587;&#x4EF6;&#x4E4B;&#x4E00;&#x3002;&#x8981;&#x6CE8;&#x610F;&#x88AB;&#x6267;&#x884C;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x52A8;&#x4F5C;&#x662F;&#x521B;&#x5EFA; Laravel &#x7684; $app &#x5B9E;&#x4F8B;&#xFF1A;</p>
+<pre><code>$app = new \Illuminate\Foundation\Application;
+</code></pre><p>When a new application instance is created, it will create a new Illuminate\Http\Request instance and bind it to the IoC container using the request key. So, we need a way to specify a custom class that should be used as the &quot;default&quot; request type, right? And, thankfully, the requestClass method on the application instance does just this! So, we can add this line at the very top of our bootstrap/start.php file:</p>
+<p>&#x5F53;&#x65B0;&#x7684;&#x5E94;&#x7528;&#x5B9E;&#x4F8B;&#x521B;&#x5EFA;&#x540E;&#xFF0C;&#x5B83;&#x5C06;&#x4F1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A; Illuminate\Http\Request &#x7684;&#x5B9E;&#x4F8B;&#x5E76;&#x4E14;&#x5C06;&#x5176;&#x7ED1;&#x5B9A;&#x5230; IoC &#x5BB9;&#x5668;&#x91CC;&#xFF0C;&#x952E;&#x540D;&#x4E3A; request&#x3002;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x627E;&#x4E2A;&#x65B9;&#x6CD5;&#x6765;&#x5C06;&#x4E00;&#x4E2A;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x7C7B;&#x6307;&#x5B9A;&#x4E3A;&#x201C;&#x9ED8;&#x8BA4;&#x7684;&#x201D;&#x8BF7;&#x6C42;&#x7C7B;&#xFF0C;&#x5BF9;&#x4E0D;&#x5BF9;&#xFF1F;&#x800C;&#x4E14;&#x5E78;&#x8FD0;&#x7684;&#x662F;&#xFF0C;&#x5E94;&#x7528;&#x5B9E;&#x4F8B;&#x6709;&#x4E00;&#x4E2A;&#x540D;&#x4E3A; requestClass &#x7684;&#x65B9;&#x6CD5;&#x5C31;&#x662F;&#x7528;&#x6765;&#x5E72;&#x8FD9;&#x4E8B;&#x513F;&#x7684;&#xFF01;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x8981;&#x5728; bootstrap/start.php &#x6587;&#x4EF6;&#x6700;&#x4E0A;&#x9762;&#x52A0;&#x4E00;&#x884C;&#xFF1A;</p>
+<pre><code>use Illuminate\Foundation\Application;
+Application::requestClass(&apos;QuickBill\Extensions\Request&apos;);
+</code></pre><p>Once you have specified the custom request class, Laravel will use this class anytime it creates a Request instance, conveniently allowing you to always have an instance of your custom request class available, even in unit test!</p>
+<p>&#x4E00;&#x65E6;&#x4F60;&#x6307;&#x5B9A;&#x4E86;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x8BF7;&#x6C42;&#x7C7B;&#xFF0C;Laravel &#x5C06;&#x5728;&#x4EFB;&#x4F55;&#x65F6;&#x5019;&#x90FD;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A; Request &#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x3002;&#x5E76;&#x4F7F;&#x4F60;&#x5F88;&#x65B9;&#x4FBF;&#x7684;&#x80FD;&#x968F;&#x65F6;&#x8BBF;&#x95EE;&#x5230;&#x5B83;&#xFF0C;&#x751A;&#x81F3;&#x5355;&#x5143;&#x6D4B;&#x8BD5;&#x4E5F;&#x4E0D;&#x4F8B;&#x5916;&#xFF01;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="7.6_IoC_Based_Extension.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 7.6 IoC Based Extension 使用容器进行扩展">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"7.7 Request Extension 请求的扩展","level":"1.8.7","depth":2,"next":{"title":"8 Single Responsibility Principle 单一职责原则","level":"1.9","depth":1,"ref":"","articles":[{"title":"8.1 Introduction 介绍","level":"1.9.1","depth":2,"path":"page/8.1_Introduction.md","ref":"./page/8.1_Introduction.md","articles":[]},{"title":"8.2 In Action 实践","level":"1.9.2","depth":2,"path":"page/8.2_In_Action.md","ref":"./page/8.2_In_Action.md","articles":[]}]},"previous":{"title":"7.6 IoC Based Extension 使用容器进行扩展","level":"1.8.6","depth":2,"path":"page/7.6_IoC_Based_Extension.md","ref":"./page/7.6_IoC_Based_Extension.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"page/7.7_Request_Extension.md","mtime":"2017-06-29T04:04:16.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-29T04:15:21.787Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

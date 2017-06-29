@@ -1,0 +1,1010 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2.1 Basic Binding 基础绑定 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="2.2_Reflective_Resolution.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Author's Note
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    1 Dependency Injection 依赖注入
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="1.1_The_Problem.html">
+            
+                <a href="1.1_The_Problem.html">
+            
+                    
+                    1.1 The Problem 遇到的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="1.2_Build_A_Contract.html">
+            
+                <a href="1.2_Build_A_Contract.html">
+            
+                    
+                    1.2 Build A Contract 建立约定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="1.3_Take_It_further.html">
+            
+                <a href="1.3_Take_It_further.html">
+            
+                    
+                    1.3 Take It further 更进一步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="1.4_Too_Much_Java.html">
+            
+                <a href="1.4_Too_Much_Java.html">
+            
+                    
+                    1.4 Too Much Java? 太像Java了？
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    2 The IoC Container 控制反转容器
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1" data-path="2.1_Basic_Binding.html">
+            
+                <a href="2.1_Basic_Binding.html">
+            
+                    
+                    2.1 Basic Binding 基础绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="2.2_Reflective_Resolution.html">
+            
+                <a href="2.2_Reflective_Resolution.html">
+            
+                    
+                    2.2 Reflective Resolution 反射解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    3 Interface As Contract 接口约定
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="3.1_Strong_Typing_&_Water_Fowl.html">
+            
+                <a href="3.1_Strong_Typing_&_Water_Fowl.html">
+            
+                    
+                    3.1 Strong Typing & Water Fowl 强类型和小鸭子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="3.2_A_Contract_Example.html">
+            
+                <a href="3.2_A_Contract_Example.html">
+            
+                    
+                    3.2 A Contract Example 约定的范例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="3.3_Interface_&_Team_Development.html">
+            
+                <a href="3.3_Interface_&_Team_Development.html">
+            
+                    
+                    3.3 Interface & Team Development 接口与团队开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    4 Service Provider 服务提供者
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="4.1_As_Bootstrapper.html">
+            
+                <a href="4.1_As_Bootstrapper.html">
+            
+                    
+                    4.1 As Bootstrapper 他是引导程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="4.2_As_Organizer.html">
+            
+                <a href="4.2_As_Organizer.html">
+            
+                    
+                    4.2 As Organizer 作为管理工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="4.3_Booting_Providers.html">
+            
+                <a href="4.3_Booting_Providers.html">
+            
+                    
+                    4.3 Booting Providers 服务提供者的启动过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="4.4_Providing_The_Core.html">
+            
+                <a href="4.4_Providing_The_Core.html">
+            
+                    
+                    4.4 Providing The Core 核心也是服务提供者的模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    5 Application Structure 应用结构
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="5.1_Introduction.html">
+            
+                <a href="5.1_Introduction.html">
+            
+                    
+                    5.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="5.2_MVC_Is_Killing_You.html">
+            
+                <a href="5.2_MVC_Is_Killing_You.html">
+            
+                    
+                    5.2 MVC Is Killing You MVC是慢性谋杀
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="5.3_Bye_Models.html">
+            
+                <a href="5.3_Bye_Models.html">
+            
+                    
+                    5.3 Bye, Bye Models 再见，模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="5.4_It's_All_About_The_Layers.html">
+            
+                <a href="5.4_It's_All_About_The_Layers.html">
+            
+                    
+                    5.4 It's All About The Layers 核心思想就是分层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="5.5_Where_To_Put_Stuff.html">
+            
+                <a href="5.5_Where_To_Put_Stuff.html">
+            
+                    
+                    5.5 Where To Put "Stuff" 东西都放哪儿？
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    6 Applied Architecture: Decoupling Handles 实用做法：解耦处理函数
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="6.1_Introduction.html">
+            
+                <a href="6.1_Introduction.html">
+            
+                    
+                    6.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="6.2_Decoupling_Handlers.html">
+            
+                <a href="6.2_Decoupling_Handlers.html">
+            
+                    
+                    6.2 Decoupling Handlers 解耦处理函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="6.3_Other_Handlers.html">
+            
+                <a href="6.3_Other_Handlers.html">
+            
+                    
+                    6.3 Other Handlers 其他处理函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    7 Extending The Framework 扩展框架
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="7.1_Introduction.html">
+            
+                <a href="7.1_Introduction.html">
+            
+                    
+                    7.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="7.2_Managers_&_Factories.html">
+            
+                <a href="7.2_Managers_&_Factories.html">
+            
+                    
+                    7.2 Managers & Factories 管理者和工厂
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="7.3_Cache.html">
+            
+                <a href="7.3_Cache.html">
+            
+                    
+                    7.3 Cache 缓存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="7.4_Session.html">
+            
+                <a href="7.4_Session.html">
+            
+                    
+                    7.4 Session 会话
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="7.5_Authentication.html">
+            
+                <a href="7.5_Authentication.html">
+            
+                    
+                    7.5 Authentication 身份认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="7.6_IoC_Based_Extension.html">
+            
+                <a href="7.6_IoC_Based_Extension.html">
+            
+                    
+                    7.6 IoC Based Extension 使用容器进行扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="7.7_Request_Extension.html">
+            
+                <a href="7.7_Request_Extension.html">
+            
+                    
+                    7.7 Request Extension 请求的扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    8 Single Responsibility Principle 单一职责原则
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="8.1_Introduction.html">
+            
+                <a href="8.1_Introduction.html">
+            
+                    
+                    8.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="8.2_In_Action.html">
+            
+                <a href="8.2_In_Action.html">
+            
+                    
+                    8.2 In Action 实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    9 Open Closed Principle 开放封闭原则
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="9.1_Introduction.html">
+            
+                <a href="9.1_Introduction.html">
+            
+                    
+                    9.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="9.2_In_Action.html">
+            
+                <a href="9.2_In_Action.html">
+            
+                    
+                    9.2 In Action 实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    10 Liskov Substitution Principle 里氏替换原则
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="10.1_Introduction.html">
+            
+                <a href="10.1_Introduction.html">
+            
+                    
+                    10.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="10.2_In_Action.html">
+            
+                <a href="10.2_In_Action.html">
+            
+                    
+                    10.2 In Action 实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    11 Interface Segregation Principle 接口隔离原则
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="11.1_Introduction.html">
+            
+                <a href="11.1_Introduction.html">
+            
+                    
+                    11.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="11.2_In_Action.html">
+            
+                <a href="11.2_In_Action.html">
+            
+                    
+                    11.2 In Action 实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" >
+            
+                <span>
+            
+                    
+                    12 Dependency Inversion Principle 依赖反转原则
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="12.1_Introduction.html">
+            
+                <a href="12.1_Introduction.html">
+            
+                    
+                    12.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="12.2_In_Action.html">
+            
+                <a href="12.2_In_Action.html">
+            
+                    
+                    12.2 In Action 实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >2.1 Basic Binding 基础绑定</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="basic-binding-&#x57FA;&#x7840;&#x7ED1;&#x5B9A;">Basic Binding &#x57FA;&#x7840;&#x7ED1;&#x5B9A;</h2>
+<p>Now that we&apos;ve learned about dependency injection, let&apos;s explore inversion of control containers. IoC containers make managing your class dependencies much more convenient, and Laravel ships with a very powerful container. The IoC container is the certral piece of the Laravel framework, and it is what allows all of the framework&apos;s jcomponents jto work together. In fact, the Laravel Application class extends the Container class!</p>
+<p>&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x5B66;&#x4E60;&#x4E86;&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x54B1;&#x4EEC;&#x4E00;&#x8D77;&#x6765;&#x63A2;&#x7D22;&#x201C;&#x63A7;&#x5236;&#x53CD;&#x8F6C;&#x5BB9;&#x5668;&#x201D;&#xFF08;IoC&#xFF09;&#x3002; IoC &#x5BB9;&#x5668;&#x53EF;&#x4EE5;&#x4F7F;&#x4F60;&#x66F4;&#x5BB9;&#x6613;&#x7BA1;&#x7406;&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#xFF0C;Laravel &#x6846;&#x67B6;&#x62E5;&#x6709;&#x4E00;&#x4E2A;&#x5F88;&#x5F3A;&#x5927;&#x7684;IoC&#x5BB9;&#x5668;&#x3002;Laravel &#x7684;&#x6838;&#x5FC3;&#x5C31;&#x662F;&#x8FD9;&#x4E2A; IoC &#x5BB9;&#x5668;&#xFF0C;&#x8FD9;&#x4E2A; IoC &#x5BB9;&#x5668;&#x4F7F;&#x5F97;&#x6846;&#x67B6;&#x5404;&#x4E2A;&#x7EC4;&#x4EF6;&#x80FD;&#x5F88;&#x597D;&#x7684;&#x5728;&#x4E00;&#x8D77;&#x5DE5;&#x4F5C;&#x3002;&#x4E8B;&#x5B9E;&#x4E0A; Laravel &#x7684; Application &#x7C7B;&#x5C31;&#x662F;&#x7EE7;&#x627F;&#x81EA; Container &#x7C7B;&#xFF01;</p>
+<blockquote>
+<h3 id="ioc-container-&#x63A7;&#x5236;&#x53CD;&#x8F6C;&#x5BB9;&#x5668;">IoC Container &#x63A7;&#x5236;&#x53CD;&#x8F6C;&#x5BB9;&#x5668;</h3>
+<p>Inversion of control containers make dependency injection more convenient. How to resolve a given class or interface is defined once in the container, which manages resolving and injecting those objects throughout your application.</p>
+<p>&#x63A7;&#x5236;&#x53CD;&#x8F6C;&#x5BB9;&#x5668;&#x4F7F;&#x5F97;&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#x66F4;&#x65B9;&#x4FBF;&#x3002;&#x5F53;&#x4E00;&#x4E2A;&#x7C7B;&#x6216;&#x63A5;&#x53E3;&#x5728;&#x5BB9;&#x5668;&#x91CC;&#x5B9A;&#x4E49;&#x4EE5;&#x540E;&#xFF0C;&#x5982;&#x4F55;&#x5904;&#x7406;&#x5B83;&#x4EEC;&#x2014;&#x2014;&#x5982;&#x4F55;&#x5728;&#x5E94;&#x7528;&#x4E2D;&#x7BA1;&#x7406;&#x3001;&#x6CE8;&#x5165;&#x8FD9;&#x4E9B;&#x5BF9;&#x8C61;&#xFF1F;</p>
+</blockquote>
+<p>In a Laravel application, the IoC container can be accessed via the App facade. The container has a variety of methods, but we&apos;ll start with the most basic. Let&apos;s continue to use our BillerInterface and BillingNotifierInterface from the previous chapter, and assume that our application is using Stripe to process payments. We can bind the Stripe implementation of the interface to the container like this:</p>
+<p>&#x5728; Laravel &#x5E94;&#x7528;&#x91CC;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; App &#x6765;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x53CD;&#x8F6C;&#x5BB9;&#x5668;&#x3002;&#x5BB9;&#x5668;&#x6709;&#x5F88;&#x591A;&#x65B9;&#x6CD5;&#xFF0C;&#x4E0D;&#x8FC7;&#x6211;&#x4EEC;&#x4ECE;&#x6700;&#x57FA;&#x7840;&#x7684;&#x5F00;&#x59CB;&#x3002;&#x8BA9;&#x6211;&#x4EEC;&#x7EE7;&#x7EED;&#x4F7F;&#x7528;&#x4E0A;&#x4E00;&#x7AE0;&#x5199;&#x7684; BillerInterface &#x548C; BillingNotifierInterface&#xFF0C;&#x4E14;&#x5047;&#x8BBE;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x4E86; Stripe &#x6765;&#x8FDB;&#x884C;&#x652F;&#x4ED8;&#x64CD;&#x4F5C;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5C06; Stripe &#x7684;&#x652F;&#x4ED8;&#x5B9E;&#x73B0;&#x7ED1;&#x5B9A;&#x5230;&#x5BB9;&#x5668;&#x91CC;&#xFF0C;&#x5C31;&#x50CF;&#x8FD9;&#x6837;&#xFF1A;</p>
+<pre><code>App::bind(&apos;BillerInterface&apos;, function()
+{
+    return new StripeBiller(App::make(&apos;BillingNotifierInterface&apos;));
+});
+</code></pre><p>Notice that within our BillingInterface resolver, we also resolve a BillingNotifierInterface implementation. Let&apos;s define that binding as well:</p>
+<p>&#x6CE8;&#x610F;&#x5728;&#x6211;&#x4EEC;&#x5904;&#x7406; BillingInterface &#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x989D;&#x5916;&#x9700;&#x8981;&#x4E00;&#x4E2A; BillingNotifierInterface &#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x518D;&#x6765;&#x4E00;&#x4E2A; bind&#xFF1A;</p>
+<pre><code>App::bind(&apos;BillingNotifierInterface&apos;, function()
+{
+    return new EmailBillingNotifier;
+});
+</code></pre><p>So, as you can see, the container is a place to store Closures that resolve various classes. Once a class has been registered with the container, we can easily resolve it from anywhere in our application. We can even resolve other container bindings within a resolver.</p>
+<p>&#x5982;&#x4F60;&#x6240;&#x89C1;&#xFF0C; &#x8FD9;&#x4E2A;&#x5BB9;&#x5668;&#x5C31;&#x662F;&#x4E2A;&#x7528;&#x6765;&#x5B58;&#x50A8;&#x5404;&#x79CD;&#x7ED1;&#x5B9A;&#x7684;&#x5730;&#x65B9;&#xFF08;&#x8BD1;&#x8005;&#x6CE8;&#xFF1A;&#x8FD9;&#x4E48;&#x7406;&#x89E3;&#x7B80;&#x5355;&#x70B9;&#x3002;&#x518D;&#x626F;&#x533F;&#x540D;&#x51FD;&#x6570;&#x3001;&#x95ED;&#x5305;&#x5C31;&#x626F;&#x8FDC;&#x4E86;&#x3002;&#xFF09;&#x3002;&#x4E00;&#x65E6;&#x4E00;&#x4E2A;&#x7C7B;&#x5728;&#x5BB9;&#x5668;&#x91CC;&#x7ED1;&#x5B9A;&#x4E86;&#x4EE5;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5F88;&#x5BB9;&#x6613;&#x7684;&#x5728;&#x5E94;&#x7528;&#x7684;&#x4EFB;&#x4F55;&#x4F4D;&#x7F6E;&#x8C03;&#x7528;&#x5B83;&#x3002;&#x6211;&#x4EEC;&#x751A;&#x81F3;&#x53EF;&#x4EE5;&#x5728; bind &#x51FD;&#x6570;&#x5185;&#x5199;&#x53E6;&#x5916;&#x7684; bind&#x3002;</p>
+<blockquote>
+<h3 id="have-acne">Have Acne?</h3>
+<p>The Laravel IoC container is a drop-in replacement for the Pimple IoC container by Fabien Potencier. So, if you&apos;re already using Pimple on a project, feel free to upgrade to the Illuminate Container component for a few more features!</p>
+<p>Laravel &#x6846;&#x67B6;&#x7684; Illuminate &#x5BB9;&#x5668;&#x548C;&#x53E6;&#x4E00;&#x4E2A;&#x540D;&#x4E3A; Pimple &#x7684; IoC &#x5BB9;&#x5668;&#x662F;&#x53EF;&#x66FF;&#x6362;&#x7684;&#x3002;&#x6240;&#x4EE5;&#x5982;&#x679C;&#x4F60;&#x4E4B;&#x524D;&#x7528;&#x7684;&#x662F; Pimple&#xFF0C;&#x4F60;&#x5C3D;&#x53EF;&#x4EE5;&#x5927;&#x80C6;&#x7684;&#x5347;&#x7EA7;&#x4E3A; Illuminate Container&#xFF0C;&#x540E;&#x8005;&#x8FD8;&#x6709;&#x66F4;&#x591A;&#x65B0;&#x529F;&#x80FD;&#xFF01;</p>
+</blockquote>
+<p>Once we&apos;re using the container, we can switch interface implementations with a single line change. For example, consider the following:</p>
+<p>&#x4E00;&#x65E6;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x4E86;&#x5BB9;&#x5668;&#xFF0C;&#x5207;&#x6362;&#x63A5;&#x53E3;&#x7684;&#x5B9E;&#x73B0;&#x5C31;&#x662F;&#x4E00;&#x884C;&#x4EE3;&#x7801;&#x7684;&#x4E8B;&#x513F;&#x3002; &#x6BD4;&#x5982;&#x8003;&#x8651;&#x4EE5;&#x4E0B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code>class UserController extends BaseController{
+
+    public function __construct(BillerInterface $biller)
+    {
+        $this-&gt;biller = $biller;
+    }
+}
+</code></pre><p>When this controller is instantiated via the IoC container, the StripeBiller, which includes the EmailBillingNotifier, will be injected into the instance. Now, if we want to change our notifier implementation, we can simply change the binding to this:</p>
+<p>&#x5F53;&#x8FD9;&#x4E2A;&#x63A7;&#x5236;&#x5668;&#x901A;&#x88AB;&#x5BB9;&#x5668;&#x5B9E;&#x4F8B;&#x5316;&#x540E;&#xFF0C;&#x5305;&#x542B;&#x7740; EmailBillingNotifier &#x7684; StripeBiller &#x4F1A;&#x88AB;&#x6CE8;&#x5165;&#x5230;&#x8FD9;&#x4E2A;&#x63A7;&#x5236;&#x5668;&#x4E2D;&#xFF08;&#x8BD1;&#x8005;&#x6CE8;&#xFF1A;&#x89C1;&#x4E0A;&#x6587;&#x7684;&#x4E24;&#x4E2A; bind &#xFF09;&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x73B0;&#x5728;&#x60F3;&#x8981;&#x6362;&#x4E00;&#x79CD;&#x63D0;&#x793A;&#x65B9;&#x5F0F;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7B80;&#x5355;&#x7684;&#x5C06;&#x4EE3;&#x7801;&#x6539;&#x4E3A;&#x8FD9;&#x6837;&#xFF1A;</p>
+<pre><code>App::bind(&apos;BillingNotifierInterface&apos;, function()
+{
+    return new SmsBillingNotifier;
+});
+</code></pre><p>Now, it doesn&apos;t matter where the notifier is resolved in our application, we will now always get the SmsBillingNotifier implementation. Utilizing this architecture, our application can be rapidly shifted to new implementations of various services.</p>
+<p>&#x73B0;&#x5728;&#x4E0D;&#x7BA1;&#x5728;&#x5E94;&#x7528;&#x7684;&#x54EA;&#x91CC;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x63D0;&#x793A;&#x5668;&#xFF0C;&#x6211;&#x4EEC;&#x603B;&#x4F1A;&#x5F97;&#x5230;SmsBillingNotifier&#x7684;&#x5BF9;&#x8C61;&#x3002;&#x5229;&#x7528;&#x8FD9;&#x79CD;&#x7ED3;&#x6784;&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x5E94;&#x7528;&#x53EF;&#x4EE5;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;&#x4E4B;&#x95F4;&#x5FEB;&#x901F;&#x5207;&#x6362;&#x3002;</p>
+<p>Being able to change implementations of an interface with a single line is amazingly powerful. For example, imagine we want to change our SMS service from a legacy provider to Twilio. We can develop a new Twilio implementation of the notifier and swap our binding. If we have problems with the transition to Twilio, we can quickly change back to the legacy provider by making a single IoC binding change. As you can see, the benefits of using dependency injection go beyond what is immediately obvious. Can you think of more benefits for using dependency injection and an IoC container?</p>
+<p>&#x53EA;&#x6539;&#x4E00;&#x884C;&#x5C31;&#x80FD;&#x5207;&#x6362;&#x4EE3;&#x7801;&#x5B9E;&#x73B0;&#xFF0C;&#x8FD9;&#x53EF;&#x662F;&#x5F88;&#x5389;&#x5BB3;&#x7684;&#x80FD;&#x529B;&#x3002;&#x6BD4;&#x5982;&#x6211;&#x4EEC;&#x60F3;&#x628A;&#x77ED;&#x4FE1;&#x670D;&#x52A1;&#x4ECE;&#x539F;&#x6765;&#x7684;&#x63D0;&#x4F9B;&#x5546;&#x66FF;&#x6362;&#x4E3A; Twilio&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5F00;&#x53D1;&#x4E00;&#x4E2A;&#x65B0;&#x7684; Twilio &#x7684;&#x63D0;&#x793A;&#x5668;&#x7C7B;&#xFF08;&#x8BD1;&#x8005;&#x6CE8;&#xFF1A;&#x5F53;&#x7136;&#x8981;&#x7EE7;&#x627F;&#x81EA; BillingNotifierInterface&#xFF09;&#x7136;&#x540E;&#x4FEE;&#x6539;&#x7ED1;&#x5B9A;&#x8BED;&#x53E5;&#x3002;&#x5982;&#x679C; Twilio &#x6709;&#x4EFB;&#x4F55;&#x95EA;&#x5931;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x4FEE;&#x6539;&#x4E00;&#x884C;&#x4EE3;&#x7801;&#x5C31;&#x53EF;&#x4EE5;&#x5FEB;&#x901F;&#x7684;&#x5207;&#x6362;&#x56DE;&#x539F;&#x6765;&#x7684;&#x77ED;&#x4FE1;&#x63D0;&#x4F9B;&#x5546;&#x3002;&#x770B;&#x5230;&#x4E86;&#x5427;&#xFF0C;&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#x7684;&#x597D;&#x5904;&#x591A;&#x5F97;&#x5F88;&#x5462;&#x3002;&#x4F60;&#x80FD;&#x518D;&#x60F3;&#x51FA;&#x51E0;&#x4E2A;&#x4F7F;&#x7528;&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#x548C;&#x63A7;&#x5236;&#x53CD;&#x8F6C;&#x5BB9;&#x5668;&#x7684;&#x597D;&#x5904;&#x4E48;&#xFF1F;</p>
+<p>Sometimes you may wish to resolve only one instance of a given class throughout your entire application. This can be achieved via the singleton method on the container class:</p>
+<p>&#x60F3;&#x5728;&#x5E94;&#x7528;&#x4E2D;&#x53EA;&#x5B9E;&#x4F8B;&#x5316;&#x67D0;&#x7C7B;&#x4E00;&#x6B21;&#xFF1F;&#x6CA1;&#x95EE;&#x9898;&#xFF0C;&#x4F7F;&#x7528; singleton &#x65B9;&#x6CD5;&#x5427;&#xFF1A;</p>
+<pre><code>App::singleton(&apos;BillingNotifierInterface&apos;, function()
+{
+    return new SmsBillingNotifier;
+});
+</code></pre><p>Now, once the container has resolved the billing notifier once, it will continue to use that same instance for all subsequent requests for that interface.</p>
+<p>&#x8FD9;&#x6837;&#x53EA;&#x8981;&#x8FD9;&#x4E2A;&#x5BB9;&#x5668;&#x751F;&#x6210;&#x4E86;&#x8FD9;&#x4E2A;&#x63D0;&#x793A;&#x5668;&#x5BF9;&#x8C61;&#x4E00;&#x6B21;&#xFF0C; &#x5728;&#x63A5;&#x4E0B;&#x6765;&#x7684;&#x751F;&#x6210;&#x8BF7;&#x6C42;&#x4E2D;&#x5BB9;&#x5668;&#x90FD;&#x53EA;&#x4F1A;&#x63D0;&#x4F9B;&#x8FD9;&#x540C;&#x6837;&#x7684;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x3002;</p>
+<p>The instance method on the container is similar to singleton, however, you are able to pass an already existing object instance. The instance you give to the container will be used each time the container needs an instance of that class:</p>
+<p>&#x5BB9;&#x5668;&#x7684; instance &#x65B9;&#x6CD5;&#x548C; singleton &#x65B9;&#x6CD5;&#x5F88;&#x7C7B;&#x4F3C;&#xFF0C;&#x533A;&#x522B;&#x662F; instance &#x53EF;&#x4EE5;&#x7ED1;&#x5B9A;&#x4E00;&#x4E2A;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x7684;&#x5BF9;&#x8C61;&#x3002;&#x7136;&#x540E;&#x5BB9;&#x5668;&#x6BCF;&#x6B21;&#x8FD4;&#x56DE;&#x7684;&#x90FD;&#x662F;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x4E86;&#x3002;</p>
+<pre><code>$notifier = new SmsBillingNotifier;
+App::instance(&apos;BillingNotifierInterface&apos;, $notifier);
+</code></pre><p>Now that we&apos;re familiar with basic container resolution using Closures, let&apos;s dig into its most powerful feature: the ability to resolve class via reflection.</p>
+<p>&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x719F;&#x6089;&#x4E86;&#x5BB9;&#x5668;&#x7684;&#x57FA;&#x7840;&#x7528;&#x6CD5;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x6DF1;&#x5165;&#x53D1;&#x6398;&#x5B83;&#x66F4;&#x5F3A;&#x5927;&#x7684;&#x529F;&#x80FD;&#xFF1A;&#x4F9D;&#x9760;&#x53CD;&#x5C04;&#x6765;&#x5904;&#x7406;&#x7C7B;&#x548C;&#x63A5;&#x53E3;&#x3002;</p>
+<blockquote>
+<h3 id="stand-alone-container-&#x5BB9;&#x5668;&#x72EC;&#x7ACB;&#x8FD0;&#x884C;">Stand Alone Container &#x5BB9;&#x5668;&#x72EC;&#x7ACB;&#x8FD0;&#x884C;</h3>
+<p>Working on a project that isn&apos;t built on Laravel? You can still utilize Laravel&apos;s IoC container by installing the illuminate/container package via Composer!</p>
+<p>&#x4F60;&#x7684;&#x9879;&#x76EE;&#x6CA1;&#x6709;&#x4F7F;&#x7528; Laravel &#xFF1F;&#x4F46;&#x4F60;&#x4F9D;&#x7136;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; Laravel &#x7684; IoC &#x5BB9;&#x5668;&#xFF01;&#x53EA;&#x8981;&#x7528; Composer &#x5B89;&#x88C5;&#x4E86; illuminate/container &#x5305;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;</p>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="2.2_Reflective_Resolution.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 2.2 Reflective Resolution 反射解决方案">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2.1 Basic Binding 基础绑定","level":"1.3.1","depth":2,"next":{"title":"2.2 Reflective Resolution 反射解决方案","level":"1.3.2","depth":2,"path":"page/2.2_Reflective_Resolution.md","ref":"./page/2.2_Reflective_Resolution.md","articles":[]},"previous":{"title":"2 The IoC Container 控制反转容器","level":"1.3","depth":1,"ref":"","articles":[{"title":"2.1 Basic Binding 基础绑定","level":"1.3.1","depth":2,"path":"page/2.1_Basic_Binding.md","ref":"./page/2.1_Basic_Binding.md","articles":[]},{"title":"2.2 Reflective Resolution 反射解决方案","level":"1.3.2","depth":2,"path":"page/2.2_Reflective_Resolution.md","ref":"./page/2.2_Reflective_Resolution.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"page/2.1_Basic_Binding.md","mtime":"2017-06-29T04:04:17.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-29T04:15:21.787Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

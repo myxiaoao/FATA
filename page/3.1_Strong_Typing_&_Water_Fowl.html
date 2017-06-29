@@ -1,0 +1,976 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>3.1 Strong Typing & Water Fowl 强类型和小鸭子 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="3.2_A_Contract_Example.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Author's Note
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    1 Dependency Injection 依赖注入
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="1.1_The_Problem.html">
+            
+                <a href="1.1_The_Problem.html">
+            
+                    
+                    1.1 The Problem 遇到的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="1.2_Build_A_Contract.html">
+            
+                <a href="1.2_Build_A_Contract.html">
+            
+                    
+                    1.2 Build A Contract 建立约定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="1.3_Take_It_further.html">
+            
+                <a href="1.3_Take_It_further.html">
+            
+                    
+                    1.3 Take It further 更进一步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="1.4_Too_Much_Java.html">
+            
+                <a href="1.4_Too_Much_Java.html">
+            
+                    
+                    1.4 Too Much Java? 太像Java了？
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    2 The IoC Container 控制反转容器
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="2.1_Basic_Binding.html">
+            
+                <a href="2.1_Basic_Binding.html">
+            
+                    
+                    2.1 Basic Binding 基础绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="2.2_Reflective_Resolution.html">
+            
+                <a href="2.2_Reflective_Resolution.html">
+            
+                    
+                    2.2 Reflective Resolution 反射解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    3 Interface As Contract 接口约定
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.4.1" data-path="3.1_Strong_Typing_&_Water_Fowl.html">
+            
+                <a href="3.1_Strong_Typing_&_Water_Fowl.html">
+            
+                    
+                    3.1 Strong Typing & Water Fowl 强类型和小鸭子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="3.2_A_Contract_Example.html">
+            
+                <a href="3.2_A_Contract_Example.html">
+            
+                    
+                    3.2 A Contract Example 约定的范例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="3.3_Interface_&_Team_Development.html">
+            
+                <a href="3.3_Interface_&_Team_Development.html">
+            
+                    
+                    3.3 Interface & Team Development 接口与团队开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    4 Service Provider 服务提供者
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="4.1_As_Bootstrapper.html">
+            
+                <a href="4.1_As_Bootstrapper.html">
+            
+                    
+                    4.1 As Bootstrapper 他是引导程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="4.2_As_Organizer.html">
+            
+                <a href="4.2_As_Organizer.html">
+            
+                    
+                    4.2 As Organizer 作为管理工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="4.3_Booting_Providers.html">
+            
+                <a href="4.3_Booting_Providers.html">
+            
+                    
+                    4.3 Booting Providers 服务提供者的启动过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="4.4_Providing_The_Core.html">
+            
+                <a href="4.4_Providing_The_Core.html">
+            
+                    
+                    4.4 Providing The Core 核心也是服务提供者的模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    5 Application Structure 应用结构
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="5.1_Introduction.html">
+            
+                <a href="5.1_Introduction.html">
+            
+                    
+                    5.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="5.2_MVC_Is_Killing_You.html">
+            
+                <a href="5.2_MVC_Is_Killing_You.html">
+            
+                    
+                    5.2 MVC Is Killing You MVC是慢性谋杀
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="5.3_Bye_Models.html">
+            
+                <a href="5.3_Bye_Models.html">
+            
+                    
+                    5.3 Bye, Bye Models 再见，模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="5.4_It's_All_About_The_Layers.html">
+            
+                <a href="5.4_It's_All_About_The_Layers.html">
+            
+                    
+                    5.4 It's All About The Layers 核心思想就是分层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="5.5_Where_To_Put_Stuff.html">
+            
+                <a href="5.5_Where_To_Put_Stuff.html">
+            
+                    
+                    5.5 Where To Put "Stuff" 东西都放哪儿？
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    6 Applied Architecture: Decoupling Handles 实用做法：解耦处理函数
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="6.1_Introduction.html">
+            
+                <a href="6.1_Introduction.html">
+            
+                    
+                    6.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="6.2_Decoupling_Handlers.html">
+            
+                <a href="6.2_Decoupling_Handlers.html">
+            
+                    
+                    6.2 Decoupling Handlers 解耦处理函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="6.3_Other_Handlers.html">
+            
+                <a href="6.3_Other_Handlers.html">
+            
+                    
+                    6.3 Other Handlers 其他处理函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    7 Extending The Framework 扩展框架
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="7.1_Introduction.html">
+            
+                <a href="7.1_Introduction.html">
+            
+                    
+                    7.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="7.2_Managers_&_Factories.html">
+            
+                <a href="7.2_Managers_&_Factories.html">
+            
+                    
+                    7.2 Managers & Factories 管理者和工厂
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="7.3_Cache.html">
+            
+                <a href="7.3_Cache.html">
+            
+                    
+                    7.3 Cache 缓存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="7.4_Session.html">
+            
+                <a href="7.4_Session.html">
+            
+                    
+                    7.4 Session 会话
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="7.5_Authentication.html">
+            
+                <a href="7.5_Authentication.html">
+            
+                    
+                    7.5 Authentication 身份认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="7.6_IoC_Based_Extension.html">
+            
+                <a href="7.6_IoC_Based_Extension.html">
+            
+                    
+                    7.6 IoC Based Extension 使用容器进行扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="7.7_Request_Extension.html">
+            
+                <a href="7.7_Request_Extension.html">
+            
+                    
+                    7.7 Request Extension 请求的扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    8 Single Responsibility Principle 单一职责原则
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="8.1_Introduction.html">
+            
+                <a href="8.1_Introduction.html">
+            
+                    
+                    8.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="8.2_In_Action.html">
+            
+                <a href="8.2_In_Action.html">
+            
+                    
+                    8.2 In Action 实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    9 Open Closed Principle 开放封闭原则
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="9.1_Introduction.html">
+            
+                <a href="9.1_Introduction.html">
+            
+                    
+                    9.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="9.2_In_Action.html">
+            
+                <a href="9.2_In_Action.html">
+            
+                    
+                    9.2 In Action 实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    10 Liskov Substitution Principle 里氏替换原则
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="10.1_Introduction.html">
+            
+                <a href="10.1_Introduction.html">
+            
+                    
+                    10.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="10.2_In_Action.html">
+            
+                <a href="10.2_In_Action.html">
+            
+                    
+                    10.2 In Action 实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    11 Interface Segregation Principle 接口隔离原则
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="11.1_Introduction.html">
+            
+                <a href="11.1_Introduction.html">
+            
+                    
+                    11.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="11.2_In_Action.html">
+            
+                <a href="11.2_In_Action.html">
+            
+                    
+                    11.2 In Action 实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" >
+            
+                <span>
+            
+                    
+                    12 Dependency Inversion Principle 依赖反转原则
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="12.1_Introduction.html">
+            
+                <a href="12.1_Introduction.html">
+            
+                    
+                    12.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="12.2_In_Action.html">
+            
+                <a href="12.2_In_Action.html">
+            
+                    
+                    12.2 In Action 实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >3.1 Strong Typing & Water Fowl 强类型和小鸭子</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="strong-typing--water-fowl-&#x5F3A;&#x7C7B;&#x578B;&#x548C;&#x5C0F;&#x9E2D;&#x5B50;">Strong Typing &amp; Water Fowl &#x5F3A;&#x7C7B;&#x578B;&#x548C;&#x5C0F;&#x9E2D;&#x5B50;</h2>
+<p>In the previous chapters, we covered the basics of dependency injection: what it is; how it is accomplished; and several of benefits. The examples in the previous chapters also demonstrated the injection of interface into our classes, so before proceeding further, it will be beneficial to talk about interfaces in depth, as many PHP developers are not familiay with them.</p>
+<p>&#x5728;&#x4E4B;&#x524D;&#x7684;&#x7AE0;&#x8282;&#x91CC;&#xFF0C;&#x6DB5;&#x76D6;&#x4E86;&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#x7684;&#x57FA;&#x7840;&#x77E5;&#x8BC6;&#xFF1A;&#x4EC0;&#x4E48;&#x662F;&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#xFF1B;&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#xFF1B;&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#x6709;&#x4EC0;&#x4E48;&#x597D;&#x5904;&#x3002;&#x4E4B;&#x524D;&#x7AE0;&#x8282;&#x91CC;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E5F;&#x6A21;&#x62DF;&#x4E86;&#x5C06; interface &#x6CE8;&#x5165;&#x5230; classes &#x91CC;&#x9762;&#x7684;&#x8FC7;&#x7A0B;&#x3002;&#x5728;&#x6211;&#x4EEC;&#x7EE7;&#x7EED;&#x5B66;&#x4E60;&#x4E4B;&#x524D;&#xFF0C;&#x6709;&#x5FC5;&#x8981;&#x6DF1;&#x5165;&#x8BB2;&#x89E3;&#x4E00;&#x4E0B;&#x63A5;&#x53E3;&#xFF0C;&#x800C;&#x8FD9;&#x6B63;&#x662F;&#x5F88;&#x591A; PHP &#x5F00;&#x53D1;&#x8005;&#x6240;&#x4E0D;&#x719F;&#x6089;&#x7684;&#x3002;</p>
+<p>Before I was a PHP programmer, I was a .NET programmer. Do I love pain or what? In .NET, interfaces are everywhere. In fact, many interfaces are defined as part of the core .NET framework itself, and for good reason: many of the .NET languages, such as C# and VB.NET, are strongly typed. In general, you must define the type of object or primitive you will be passing into a method. For example, consider the following C# method:</p>
+<p>&#x5728;&#x6211;&#x6210;&#x4E3A; PHP &#x7A0B;&#x5E8F;&#x5458;&#x4E4B;&#x524D;&#xFF0C;&#x6211;&#x662F;&#x5199; .NET &#x7684;&#x3002;&#x5728; .NET &#x91CC;&#x53EF;&#x5230;&#x5904;&#x90FD;&#x662F;&#x63A5;&#x53E3;&#x3002;&#x4E8B;&#x5B9E;&#x4E0A;&#x5F88;&#x591A;&#x63A5;&#x53E3;&#x662F;&#x5B9A;&#x4E49;&#x5728; .NET &#x6846;&#x67B6;&#x6838;&#x5FC3;&#x4E2D;&#x4E86;&#xFF0C;&#x4E00;&#x4E2A;&#x597D;&#x7684;&#x7406;&#x7531;&#x662F;&#xFF1A;&#x5F88;&#x591A; .NET &#x8BED;&#x8A00;&#x6BD4;&#x5982; C# &#x548C; VB.NET &#x90FD;&#x662F;&#x5F3A;&#x7C7B;&#x578B;&#x7684;&#x3002; &#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x4F60;&#x5728;&#x7ED9;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x4F20;&#x503C;&#xFF0C;&#x8981;&#x4E48;&#x4F20;&#x539F;&#x751F;&#x7C7B;&#x578B;&#x5BF9;&#x8C61;&#xFF0C;&#x8981;&#x4E48;&#x5C31;&#x5FC5;&#x987B;&#x7ED9;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x4E00;&#x4E2A;&#x660E;&#x786E;&#x7684;&#x7C7B;&#x578B;&#x5B9A;&#x4E49;&#x3002;&#x6BD4;&#x5982;&#x8003;&#x8651;&#x4EE5;&#x4E0B; C# &#x65B9;&#x6CD5;&#xFF1A;</p>
+<pre><code>public int BillUser(User user)
+{
+    this.biller.bill(user.GetId(), this.amount)
+}
+</code></pre><p>Note that we were forced to define not only what type of arguments we will be passing to the method, but also what the method itself will be returning. C# is encouraging type safety. We will not be allowed to pass anything other than an User object into out BillUser method</p>
+<p>&#x6CE8;&#x610F;&#x5728;&#x8FD9;&#x91CC;&#xFF0C; &#x6211;&#x4EEC;&#x4E0D;&#x4EC5;&#x8981;&#x5B9A;&#x4E49;&#x4F20;&#x8FDB;&#x53BB;&#x7684;&#x53C2;&#x6570;&#x662F;&#x4EC0;&#x4E48;&#x7C7B;&#x578B;&#x7684;&#xFF0C;&#x8FD8;&#x8981;&#x5B9A;&#x4E49;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x503C;&#x662F;&#x4EC0;&#x4E48;&#x7C7B;&#x578B;&#x7684;&#x3002; C# &#x9F13;&#x52B1;&#x7C7B;&#x578B;&#x5B89;&#x5168;&#x3002;&#x9664;&#x4E86;&#x6307;&#x5B9A;&#x7684; User &#x5BF9;&#x8C61;&#xFF0C;&#x5B83;&#x4E0D;&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x4F20;&#x9012;&#x5176;&#x4ED6;&#x7C7B;&#x578B;&#x7684;&#x5BF9;&#x8C61;&#x5230; BillUser &#x65B9;&#x6CD5;&#x4E2D;&#x3002;</p>
+<p>However, PHP is generally a duck typed language. In a duck typed language, an object&apos;s avaliable methods determine the way it may be used, rather than its inheritance from a class or implementation of an interface. Let&apos;s look at an example:</p>
+<p>&#x7136;&#x800C; PHP &#x662F;&#x4E00;&#x79CD;&#x9E2D;&#x5B50;&#x7C7B;&#x578B;&#x7684;&#x8BED;&#x8A00;&#x3002;&#x6240;&#x8C13;&#x9E2D;&#x5B50;&#x7C7B;&#x578B;&#x7684;&#x8BED;&#x8A00;&#xFF0C;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x53EF;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#x53D6;&#x51B3;&#x4E8E;&#x4F7F;&#x7528;&#x65B9;&#x5F0F;&#xFF0C;&#x800C;&#x975E;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x4ECE;&#x54EA;&#x513F;&#x7EE7;&#x627F;&#x6216;&#x5B9E;&#x73B0;&#x3002;&#x6765;&#x770B;&#x4E2A;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code>public function billUser($user)
+{
+    $this-&gt;biller-&gt;bill($user-&gt;getId(), $this-&gt;amount);
+}
+</code></pre><p>In PHP, we did not have to tell the method what type of argument to expect. In fact, we can pass any type, so long as the object responds to the getId method. This is an example of duck typing. If the object looks like a duck, quacks like a duck, it must be a duck. Or, in this case, if the object looks like a user, and acts like a user, it must be one.</p>
+<p>&#x5728; PHP &#x91CC;&#x9762;&#xFF0C;&#x6211;&#x4EEC;&#x4E0D;&#x5FC5;&#x544A;&#x8BC9;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x9700;&#x8981;&#x4EC0;&#x4E48;&#x7C7B;&#x578B;&#x7684;&#x53C2;&#x6570;&#x3002;&#x5B9E;&#x9645;&#x4E0A;&#x6211;&#x4EEC;&#x4F20;&#x9012;&#x4EFB;&#x4F55;&#x7C7B;&#x578B;&#x7684;&#x5BF9;&#x8C61;&#x90FD;&#x53EF;&#x4EE5;&#xFF0C;&#x53EA;&#x8981;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x80FD;&#x54CD;&#x5E94; getId &#x7684;&#x8C03;&#x7528;&#x3002;&#x8FD9;&#x91CC;&#x6709;&#x4E2A;&#x5173;&#x4E8E;&#x9E2D;&#x5B50;&#x7C7B;&#x578B;&#xFF08;&#x4E0B;&#x6587;&#x8BD1;&#x4F5C;&#xFF1A;&#x5F31;&#x7C7B;&#x578B;&#xFF09;&#x7684;&#x89E3;&#x91CA;&#xFF1A;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x4E1C;&#x897F;&#x770B;&#x8D77;&#x6765;&#x50CF;&#x4E2A;&#x9E2D;&#x5B50;&#xFF0C;&#x53EB;&#x58F0;&#x4E5F;&#x50CF;&#x9E2D;&#x5B50;&#x53EB;&#xFF0C;&#x90A3;&#x4ED6;&#x5C31;&#x662F;&#x4E2A;&#x9E2D;&#x5B50;&#x3002; &#x6362;&#x8A00;&#x4E4B;&#x5728;&#x7A0B;&#x5E8F;&#x91CC;&#xFF0C;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x770B;&#x4E0A;&#x53BB;&#x662F;&#x4E2A; User &#xFF0C;&#x65B9;&#x6CD5;&#x54CD;&#x5E94;&#x4E5F;&#x50CF;&#x4E2A; User &#xFF0C;&#x90A3;&#x4ED6;&#x5C31;&#x662F;&#x4E2A; User &#x3002;</p>
+<p>But, does PHP have any strongly typed style features? Of course! PHP has a mixture of both strong and duck typed constructs. To illustrate this, let&apos;s re-write our billUser method:</p>
+<p>&#x4E0D;&#x8FC7; PHP &#x5230;&#x5E95;&#x6709;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x5F3A;&#x7C7B;&#x578B;&#x529F;&#x80FD;&#x5462;&#xFF1F;&#x5F53;&#x7136;&#x6709;&#xFF01;PHP &#x6DF7;&#x5408;&#x4E86;&#x5F3A;&#x7C7B;&#x578B;&#x548C;&#x5F31;&#x7C7B;&#x578B;&#x7684;&#x7ED3;&#x6784;&#x3002;&#x4E3A;&#x4E86;&#x8BF4;&#x660E;&#x8FD9;&#x70B9;&#xFF0C;&#x54B1;&#x4EEC;&#x6765;&#x91CD;&#x5199;&#x4E00;&#x4E0B; billUser &#x65B9;&#x6CD5;&#xFF1A;</p>
+<pre><code>public function billUser(User $user)
+{
+    $this-&gt;biller-&gt;bill($user-&gt;getId(), $amount);
+}
+</code></pre><p>After adding the User type-hint to our method signature, we can now gurantee that all objects passed to billUser either are a User instance, or extend the User class.</p>
+<p>&#x7ED9;&#x65B9;&#x6CD5;&#x52A0;&#x4E0A;&#x4E86;&#x52A0;&#x4E0A;&#x4E86; User &#x7C7B;&#x578B;&#x63D0;&#x793A;&#x540E;&#xFF0C; &#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x786E;&#x4FE1;&#x7684;&#x8BF4;&#x6240;&#x6709;&#x4F20;&#x5165; billUser &#x65B9;&#x6CD5;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x90FD;&#x662F; User &#x7C7B;&#x6216;&#x662F;&#x7EE7;&#x627F;&#x81EA; User &#x7C7B;&#x7684;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#x3002;</p>
+<p>There are advangates and disadvantages to both typing systems. In strongly typed languages, the compiler can often provide you with through compile-time error checking, which is extremely helpful. Method inputs and outputs are also much more explicit in a strongly typed language.</p>
+<p>&#x5F3A;&#x7C7B;&#x578B;&#x548C;&#x5F31;&#x7C7B;&#x578B;&#x5404;&#x6709;&#x4F18;&#x52A3;&#x3002;&#x5728;&#x5F3A;&#x7C7B;&#x578B;&#x8BED;&#x8A00;&#x4E2D;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x901A;&#x5E38;&#x80FD;&#x63D0;&#x4F9B;&#x7F16;&#x8BD1;&#x65F6;&#x9519;&#x8BEF;&#x68C0;&#x67E5;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x8FD9;&#x529F;&#x80FD;&#x53EF;&#x662F;&#x975E;&#x5E38;&#x6709;&#x7528;&#x7684;&#x3002;&#x65B9;&#x6CD5;&#x7684;&#x8F93;&#x5165;&#x548C;&#x8F93;&#x51FA;&#x4E5F;&#x66F4;&#x52A0;&#x660E;&#x786E;&#x3002;</p>
+<p>As the same time, the explicit nature of strong typing can make it rigid. For example, dynamic methods such as whereEmailOrName that the Eloquent ORM offers would be impossible to implement in a strongly typed language like C#. Try to avoid heated discussions on which paradigm is better, and remember the advantages and disadvantages of each. It is not &quot;wrong&quot; to use the strong typing avaliable in PHP, nor is it wrong to use duck typing. What is wrong is exclusively using one or the other without considering the particular problem you are trying to solve.</p>
+<p>&#x4E0E;&#x6B64;&#x540C;&#x65F6;&#xFF0C;&#x5F3A;&#x7C7B;&#x578B;&#x7684;&#x7279;&#x6027;&#x4E5F;&#x4F7F;&#x5F97;&#x7A0B;&#x5E8F;&#x50F5;&#x5316;&#x3002;&#x6BD4;&#x5982; Eloquent ORM &#x4E2D;&#xFF0C;&#x7C7B;&#x4F3C; whereEmailOrName &#x7684;&#x52A8;&#x6001;&#x65B9;&#x6CD5;&#x5C31;&#x4E0D;&#x53EF;&#x80FD;&#x5728; C# &#x8FD9;&#x6837;&#x7684;&#x5F3A;&#x7C7B;&#x578B;&#x8BED;&#x8A00;&#x91CC;&#x5B9E;&#x73B0;&#x3002;&#x6211;&#x4EEC;&#x4E0D;&#x8BA8;&#x8BBA;&#x5F3A;&#x7C7B;&#x578B;&#x5F31;&#x7C7B;&#x578B;&#x54EA;&#x79CD;&#x66F4;&#x597D;&#xFF0C;&#x800C;&#x662F;&#x8981;&#x8BB0;&#x4F4F;&#x4ED6;&#x4EEC;&#x5206;&#x522B;&#x7684;&#x4F18;&#x52A3;&#x4E4B;&#x5904;&#x3002;&#x5728; PHP &#x91CC;&#x9762;&#x4F7F;&#x7528;&#x5F3A;&#x7C7B;&#x578B;&#x6807;&#x8BB0;&#x4E0D;&#x662F;&#x9519;&#x8BEF;&#xFF0C;&#x4F7F;&#x7528;&#x5F31;&#x7C7B;&#x578B;&#x7279;&#x6027;&#x4E5F;&#x4E0D;&#x662F;&#x9519;&#x8BEF;&#x3002;&#x4F46;&#x662F;&#x4E0D;&#x52A0;&#x601D;&#x7D22;&#xFF0C;&#x4E0D;&#x7BA1;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x53BB;&#x4F7F;&#x7528;&#x4E00;&#x79CD;&#x6A21;&#x5F0F;&#xFF0C;&#x8FD9;&#x4E48;&#x56FA;&#x6267;&#x7684;&#x4F7F;&#x7528;&#x5C31;&#x662F;&#x9519;&#x7684;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="3.2_A_Contract_Example.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 3.2 A Contract Example 约定的范例">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"3.1 Strong Typing & Water Fowl 强类型和小鸭子","level":"1.4.1","depth":2,"next":{"title":"3.2 A Contract Example 约定的范例","level":"1.4.2","depth":2,"path":"page/3.2_A_Contract_Example.md","ref":"./page/3.2_A_Contract_Example.md","articles":[]},"previous":{"title":"3 Interface As Contract 接口约定","level":"1.4","depth":1,"ref":"","articles":[{"title":"3.1 Strong Typing & Water Fowl 强类型和小鸭子","level":"1.4.1","depth":2,"path":"page/3.1_Strong_Typing_&_Water_Fowl.md","ref":"./page/3.1_Strong_Typing_&_Water_Fowl.md","articles":[]},{"title":"3.2 A Contract Example 约定的范例","level":"1.4.2","depth":2,"path":"page/3.2_A_Contract_Example.md","ref":"./page/3.2_A_Contract_Example.md","articles":[]},{"title":"3.3 Interface & Team Development 接口与团队开发","level":"1.4.3","depth":2,"path":"page/3.3_Interface_&_Team_Development.md","ref":"./page/3.3_Interface_&_Team_Development.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"page/3.1_Strong_Typing_&_Water_Fowl.md","mtime":"2017-06-29T04:04:17.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-29T04:15:21.787Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

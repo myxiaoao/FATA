@@ -1,0 +1,968 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>5.2 MVC Is Killing You MVC是慢性谋杀 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="5.3_Bye_Models.html" />
+    
+    
+    <link rel="prev" href="5.1_Introduction.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Author's Note
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    1 Dependency Injection 依赖注入
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="1.1_The_Problem.html">
+            
+                <a href="1.1_The_Problem.html">
+            
+                    
+                    1.1 The Problem 遇到的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="1.2_Build_A_Contract.html">
+            
+                <a href="1.2_Build_A_Contract.html">
+            
+                    
+                    1.2 Build A Contract 建立约定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="1.3_Take_It_further.html">
+            
+                <a href="1.3_Take_It_further.html">
+            
+                    
+                    1.3 Take It further 更进一步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="1.4_Too_Much_Java.html">
+            
+                <a href="1.4_Too_Much_Java.html">
+            
+                    
+                    1.4 Too Much Java? 太像Java了？
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    2 The IoC Container 控制反转容器
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="2.1_Basic_Binding.html">
+            
+                <a href="2.1_Basic_Binding.html">
+            
+                    
+                    2.1 Basic Binding 基础绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="2.2_Reflective_Resolution.html">
+            
+                <a href="2.2_Reflective_Resolution.html">
+            
+                    
+                    2.2 Reflective Resolution 反射解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    3 Interface As Contract 接口约定
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="3.1_Strong_Typing_&_Water_Fowl.html">
+            
+                <a href="3.1_Strong_Typing_&_Water_Fowl.html">
+            
+                    
+                    3.1 Strong Typing & Water Fowl 强类型和小鸭子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="3.2_A_Contract_Example.html">
+            
+                <a href="3.2_A_Contract_Example.html">
+            
+                    
+                    3.2 A Contract Example 约定的范例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="3.3_Interface_&_Team_Development.html">
+            
+                <a href="3.3_Interface_&_Team_Development.html">
+            
+                    
+                    3.3 Interface & Team Development 接口与团队开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    4 Service Provider 服务提供者
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="4.1_As_Bootstrapper.html">
+            
+                <a href="4.1_As_Bootstrapper.html">
+            
+                    
+                    4.1 As Bootstrapper 他是引导程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="4.2_As_Organizer.html">
+            
+                <a href="4.2_As_Organizer.html">
+            
+                    
+                    4.2 As Organizer 作为管理工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="4.3_Booting_Providers.html">
+            
+                <a href="4.3_Booting_Providers.html">
+            
+                    
+                    4.3 Booting Providers 服务提供者的启动过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="4.4_Providing_The_Core.html">
+            
+                <a href="4.4_Providing_The_Core.html">
+            
+                    
+                    4.4 Providing The Core 核心也是服务提供者的模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    5 Application Structure 应用结构
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="5.1_Introduction.html">
+            
+                <a href="5.1_Introduction.html">
+            
+                    
+                    5.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.2" data-path="5.2_MVC_Is_Killing_You.html">
+            
+                <a href="5.2_MVC_Is_Killing_You.html">
+            
+                    
+                    5.2 MVC Is Killing You MVC是慢性谋杀
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="5.3_Bye_Models.html">
+            
+                <a href="5.3_Bye_Models.html">
+            
+                    
+                    5.3 Bye, Bye Models 再见，模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="5.4_It's_All_About_The_Layers.html">
+            
+                <a href="5.4_It's_All_About_The_Layers.html">
+            
+                    
+                    5.4 It's All About The Layers 核心思想就是分层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="5.5_Where_To_Put_Stuff.html">
+            
+                <a href="5.5_Where_To_Put_Stuff.html">
+            
+                    
+                    5.5 Where To Put "Stuff" 东西都放哪儿？
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    6 Applied Architecture: Decoupling Handles 实用做法：解耦处理函数
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="6.1_Introduction.html">
+            
+                <a href="6.1_Introduction.html">
+            
+                    
+                    6.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="6.2_Decoupling_Handlers.html">
+            
+                <a href="6.2_Decoupling_Handlers.html">
+            
+                    
+                    6.2 Decoupling Handlers 解耦处理函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="6.3_Other_Handlers.html">
+            
+                <a href="6.3_Other_Handlers.html">
+            
+                    
+                    6.3 Other Handlers 其他处理函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    7 Extending The Framework 扩展框架
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="7.1_Introduction.html">
+            
+                <a href="7.1_Introduction.html">
+            
+                    
+                    7.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="7.2_Managers_&_Factories.html">
+            
+                <a href="7.2_Managers_&_Factories.html">
+            
+                    
+                    7.2 Managers & Factories 管理者和工厂
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="7.3_Cache.html">
+            
+                <a href="7.3_Cache.html">
+            
+                    
+                    7.3 Cache 缓存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="7.4_Session.html">
+            
+                <a href="7.4_Session.html">
+            
+                    
+                    7.4 Session 会话
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="7.5_Authentication.html">
+            
+                <a href="7.5_Authentication.html">
+            
+                    
+                    7.5 Authentication 身份认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="7.6_IoC_Based_Extension.html">
+            
+                <a href="7.6_IoC_Based_Extension.html">
+            
+                    
+                    7.6 IoC Based Extension 使用容器进行扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="7.7_Request_Extension.html">
+            
+                <a href="7.7_Request_Extension.html">
+            
+                    
+                    7.7 Request Extension 请求的扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    8 Single Responsibility Principle 单一职责原则
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="8.1_Introduction.html">
+            
+                <a href="8.1_Introduction.html">
+            
+                    
+                    8.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="8.2_In_Action.html">
+            
+                <a href="8.2_In_Action.html">
+            
+                    
+                    8.2 In Action 实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    9 Open Closed Principle 开放封闭原则
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="9.1_Introduction.html">
+            
+                <a href="9.1_Introduction.html">
+            
+                    
+                    9.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="9.2_In_Action.html">
+            
+                <a href="9.2_In_Action.html">
+            
+                    
+                    9.2 In Action 实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    10 Liskov Substitution Principle 里氏替换原则
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="10.1_Introduction.html">
+            
+                <a href="10.1_Introduction.html">
+            
+                    
+                    10.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="10.2_In_Action.html">
+            
+                <a href="10.2_In_Action.html">
+            
+                    
+                    10.2 In Action 实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    11 Interface Segregation Principle 接口隔离原则
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="11.1_Introduction.html">
+            
+                <a href="11.1_Introduction.html">
+            
+                    
+                    11.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="11.2_In_Action.html">
+            
+                <a href="11.2_In_Action.html">
+            
+                    
+                    11.2 In Action 实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" >
+            
+                <span>
+            
+                    
+                    12 Dependency Inversion Principle 依赖反转原则
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="12.1_Introduction.html">
+            
+                <a href="12.1_Introduction.html">
+            
+                    
+                    12.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="12.2_In_Action.html">
+            
+                <a href="12.2_In_Action.html">
+            
+                    
+                    12.2 In Action 实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >5.2 MVC Is Killing You MVC是慢性谋杀</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="mvc-is-killing-you-mvc-&#x662F;&#x6162;&#x6027;&#x8C0B;&#x6740;">MVC Is Killing You MVC &#x662F;&#x6162;&#x6027;&#x8C0B;&#x6740;</h2>
+<p>The biggest roadblock towards developers achieving good design is a simple acronym: M-V-C. Models, views, and controllers have dominated web framework thinking for years, in part because of the popularity of Ruby on Rails. However, ask a developer to define &quot;model&quot;. Usually, you&apos;ll hear a few mutters and the word &quot;database&quot;. Supposedly, the model is the database. It&apos;s where all your database stuff goes, whatever that means. But, as you quickly learn, your application needs a lot more logic than just a simple database access class. It needs to do validation, call external services, send e-mails, and more.</p>
+<p>&#x4E3A;&#x4E86;&#x505A;&#x51FA;&#x597D;&#x7684;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#xFF0C;&#x6700;&#x5927;&#x7684;&#x62E6;&#x8DEF;&#x864E;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x7F29;&#x5199;&#x8BCD;&#xFF1A;M-V-C&#x3002;&#x6A21;&#x578B;&#x3001;&#x89C6;&#x56FE;&#x3001;&#x63A7;&#x5236;&#x5668;&#x4E3B;&#x5BB0;&#x4E86;Web&#x6846;&#x67B6;&#x7684;&#x601D;&#x60F3;&#x5DF2;&#x7ECF;&#x597D;&#x591A;&#x5E74;&#x4E86;&#x3002;&#x8FD9;&#x79CD;&#x601D;&#x60F3;&#x7684;&#x6D41;&#x884C;&#x67D0;&#x79CD;&#x7A0B;&#x5EA6;&#x4E0A;&#x662F;&#x6258;&#x4E86; Ruby on Rails &#x6108;&#x52A0;&#x6D41;&#x884C;&#x7684;&#x798F;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x95EE;&#x4E00;&#x4E2A;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x201C;&#x6A21;&#x578B;&#x201D;&#x7684;&#x5B9A;&#x4E49;&#x662F;&#x4EC0;&#x4E48;&#x3002;&#x901A;&#x5E38;&#x4F60;&#x4F1A;&#x542C;&#x5230;&#x4ED6;&#x561F;&#x54DD;&#x7740;&#x4EC0;&#x4E48;&#x201C;&#x6570;&#x636E;&#x5E93;&#x201D;&#x4E4B;&#x7C7B;&#x7684;&#x4E1C;&#x897F;&#x3002;&#x8FD9;&#x4E48;&#x8BF4;&#xFF0C;&#x6A21;&#x578B;&#x5C31;&#x662F;&#x6570;&#x636E;&#x5E93;&#x4E86;&#x3002;&#x4E0D;&#x7BA1;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x4EC0;&#x4E48;&#xFF0C;&#x6A21;&#x578B;&#x91CC;&#x5305;&#x542B;&#x4E86;&#x5173;&#x4E8E;&#x6570;&#x636E;&#x5E93;&#x7684;&#x4E00;&#x5207;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x4F60;&#x5F88;&#x5FEB;&#x5C31;&#x4F1A;&#x77E5;&#x9053;&#xFF0C;&#x4F60;&#x7684;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x9700;&#x8981;&#x7684;&#x4E0D;&#x4EC5;&#x4EC5;&#x662F;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x6570;&#x636E;&#x5E93;&#x8BBF;&#x95EE;&#x7C7B;&#x3002;&#x4ED6;&#x9700;&#x8981;&#x66F4;&#x591A;&#x7684;&#x903B;&#x8F91;&#x5982;&#xFF1A;&#x6570;&#x636E;&#x9A8C;&#x8BC1;&#x3001;&#x8C03;&#x7528;&#x5916;&#x90E8;&#x670D;&#x52A1;&#x3001;&#x53D1;&#x9001;&#x7535;&#x5B50;&#x90AE;&#x4EF6;&#xFF0C;&#x7B49;&#x7B49;&#x66F4;&#x591A;&#x3002;</p>
+<blockquote>
+<h3 id="what-is-a-model-&#x6A21;&#x578B;&#x662F;&#x5565;&#xFF1F;">What Is A Model? &#x6A21;&#x578B;&#x662F;&#x5565;&#xFF1F;</h3>
+<p>The word &quot;model&quot; has become so ambiguous that it has no meaning. By developing with a more specific vocabulary, it will be easier to separate our application into smaller, cleaner classes with a clearly defined responsiblity.</p>
+<p>&#x5355;&#x8BCD; &quot;model&quot; &#x7684;&#x542B;&#x4E49;&#x592A;&#x6A21;&#x7CCA;&#x4E86;&#xFF0C;&#x5F88;&#x96BE;&#x8BF4;&#x660E;&#x767D;&#x51C6;&#x786E;&#x7684;&#x542B;&#x4E49;&#x3002;&#x66F4;&#x5177;&#x4F53;&#x6765;&#x8BB2;&#xFF0C;&#x6A21;&#x578B;&#x662F;&#x7528;&#x6765;&#x5C06;&#x6211;&#x4EEC;&#x7684;&#x5E94;&#x7528;&#x5212;&#x5206;&#x6210;&#x66F4;&#x5C0F;&#x3001;&#x66F4;&#x6E05;&#x6670;&#x7684;&#x7C7B;&#xFF0C;&#x4F7F;&#x5F97;&#x5404;&#x4EE3;&#x7801;&#x90E8;&#x5206;&#x6709;&#x7740;&#x660E;&#x786E;&#x7684;&#x6743;&#x8D23;&#x3002;</p>
+</blockquote>
+<p>So, what is the solution to this dilemma? Many developers start packing logic into their controllers. Once the controllers get large enough, they need to re-use business logic that is in other controllers. Instead of extracting the logic into another class, most developers mistakenly assume they need to call controllers from within other controllers. This pattern is typically called &quot;HMVC&quot;. Unfortunately, this pattern often indicates poor application design, and controllers that are much too complicated.</p>
+<p>&#x6240;&#x4EE5;&#x600E;&#x4E48;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF08;&#x8BD1;&#x8005;&#x6CE8;&#xFF1A;&#x4E0A;&#x6587;&#x4E2D;&#x201C;&#x66F4;&#x591A;&#x7684;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x201D;&#xFF09;&#x5462;&#xFF1F;&#x5F88;&#x591A;&#x5F00;&#x53D1;&#x8005;&#x5F00;&#x59CB;&#x5C06;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x5305;&#x88C5;&#x5230;&#x63A7;&#x5236;&#x5668;&#x91CC;&#x9762;&#x3002;&#x5F53;&#x63A7;&#x5236;&#x5668;&#x5E9E;&#x5927;&#x5230;&#x4E00;&#x5B9A;&#x89C4;&#x6A21;&#xFF0C;&#x4ED6;&#x4EEC;&#x5C06;&#x4F1A;&#x9700;&#x8981;&#x91CD;&#x7528;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x3002;&#x5927;&#x90E8;&#x5206;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x6CA1;&#x6709;&#x5C06;&#x8FD9;&#x4E9B;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x63D0;&#x53D6;&#x5230;&#x522B;&#x7684;&#x7C7B;&#x91CC;&#x9762;&#xFF0C;&#x800C;&#x662F;&#x9519;&#x8BEF;&#x7684;&#x81C6;&#x60F3;&#x4ED6;&#x4EEC;&#x9700;&#x8981;&#x5728;&#x63A7;&#x5236;&#x5668;&#x91CC;&#x9762;&#x8C03;&#x7528;&#x522B;&#x7684;&#x63A7;&#x5236;&#x5668;&#x3002;&#x8FD9;&#x79CD;&#x6A21;&#x5F0F;&#x901A;&#x5E38;&#x88AB;&#x79F0;&#x4E3A; &#x201C;HMVC&#x201D; &#x3002;&#x4E0D;&#x5E78;&#x7684;&#x662F;&#xFF0C;&#x8FD9;&#x79CD;&#x6A21;&#x5F0F;&#x901A;&#x5E38;&#x4E5F;&#x9884;&#x793A;&#x7740;&#x7CDF;&#x7CD5;&#x7684;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#xFF0C;&#x5E76;&#x4E14;&#x63A7;&#x5236;&#x5668;&#x5DF2;&#x7ECF;&#x592A;&#x590D;&#x6742;&#x4E86;&#x3002;</p>
+<blockquote>
+<h3 id="hmvc-usually-indicates-poor-design-hmvc&#xFF08;&#x901A;&#x5E38;&#xFF09;&#x9884;&#x793A;&#x7740;&#x7CDF;&#x7CD5;&#x7684;&#x8BBE;&#x8BA1;&#x3002;">HMVC (Usually) Indicates Poor Design HMVC&#xFF08;&#x901A;&#x5E38;&#xFF09;&#x9884;&#x793A;&#x7740;&#x7CDF;&#x7CD5;&#x7684;&#x8BBE;&#x8BA1;&#x3002;</h3>
+<p>Feel the need to call controllers from other controllers? This is often indicative of poor application design and too much business logic in your controllers. Extract the logic into a third class that can be injected into any controller.</p>
+<p>&#x4F60;&#x89C9;&#x5F97;&#x9700;&#x8981;&#x5728;&#x63A7;&#x5236;&#x5668;&#x91CC;&#x9762;&#x8C03;&#x7528;&#x5176;&#x4ED6;&#x7684;&#x63A7;&#x5236;&#x5668;&#xFF1F;&#x8FD9;&#x901A;&#x5E38;&#x9884;&#x793A;&#x7740;&#x7CDF;&#x7CD5;&#x7684;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#x5E76;&#x4E14;&#x4F60;&#x7684;&#x63A7;&#x5236;&#x5668;&#x91CC;&#x9762;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x592A;&#x591A;&#x4E86;&#x3002;&#x628A;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x62BD;&#x51FA;&#x6765;&#x653E;&#x5230;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x7C7B;&#x91CC;&#x9762;&#xFF0C;&#x8FD9;&#x6837;&#x4F60;&#x5C31;&#x53EF;&#x4EE5;&#x5728;&#x5176;&#x4ED6;&#x4EFB;&#x4F55;&#x63A7;&#x5236;&#x5668;&#x91CC;&#x9762;&#x8C03;&#x7528;&#x4E86;&#x3002;</p>
+</blockquote>
+<p>There is a better way to structure applications. We need to wash our minds clean of all we have been taught about models. In fact, let&apos;s just delete the model directory and start fresh!</p>
+<p>&#x6709;&#x4E00;&#x79CD;&#x66F4;&#x597D;&#x7684;&#x7A0B;&#x5E8F;&#x7ED3;&#x6784;&#x3002;&#x4F46;&#x9996;&#x5148;&#x6211;&#x4EEC;&#x8981;&#x5FD8;&#x6389;&#x4EE5;&#x5F80;&#x6211;&#x4EEC;&#x88AB;&#x704C;&#x8F93;&#x7684;&#x5173;&#x4E8E;&#x201C;&#x6A21;&#x578B;&#x201D;&#x7684;&#x4E00;&#x5207;&#x3002;&#x5E72;&#x8106;&#x70B9;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x76F4;&#x63A5;&#x5220;&#x6389; model &#x76EE;&#x5F55;&#xFF0C;&#x91CD;&#x65B0;&#x5F00;&#x59CB;&#x5427;&#xFF01;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="5.1_Introduction.html" class="navigation navigation-prev " aria-label="Previous page: 5.1 Introduction 介绍">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="5.3_Bye_Models.html" class="navigation navigation-next " aria-label="Next page: 5.3 Bye, Bye Models 再见，模型">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"5.2 MVC Is Killing You MVC是慢性谋杀","level":"1.6.2","depth":2,"next":{"title":"5.3 Bye, Bye Models 再见，模型","level":"1.6.3","depth":2,"path":"page/5.3_Bye_Models.md","ref":"./page/5.3_Bye_Models.md","articles":[]},"previous":{"title":"5.1 Introduction 介绍","level":"1.6.1","depth":2,"path":"page/5.1_Introduction.md","ref":"./page/5.1_Introduction.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"page/5.2_MVC_Is_Killing_You.md","mtime":"2017-06-29T04:04:17.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-29T04:15:21.787Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,968 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>6.3 Other Handlers 其他处理函数 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="6.2_Decoupling_Handlers.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Author's Note
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    1 Dependency Injection 依赖注入
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="1.1_The_Problem.html">
+            
+                <a href="1.1_The_Problem.html">
+            
+                    
+                    1.1 The Problem 遇到的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="1.2_Build_A_Contract.html">
+            
+                <a href="1.2_Build_A_Contract.html">
+            
+                    
+                    1.2 Build A Contract 建立约定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="1.3_Take_It_further.html">
+            
+                <a href="1.3_Take_It_further.html">
+            
+                    
+                    1.3 Take It further 更进一步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="1.4_Too_Much_Java.html">
+            
+                <a href="1.4_Too_Much_Java.html">
+            
+                    
+                    1.4 Too Much Java? 太像Java了？
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    2 The IoC Container 控制反转容器
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="2.1_Basic_Binding.html">
+            
+                <a href="2.1_Basic_Binding.html">
+            
+                    
+                    2.1 Basic Binding 基础绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="2.2_Reflective_Resolution.html">
+            
+                <a href="2.2_Reflective_Resolution.html">
+            
+                    
+                    2.2 Reflective Resolution 反射解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    3 Interface As Contract 接口约定
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="3.1_Strong_Typing_&_Water_Fowl.html">
+            
+                <a href="3.1_Strong_Typing_&_Water_Fowl.html">
+            
+                    
+                    3.1 Strong Typing & Water Fowl 强类型和小鸭子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="3.2_A_Contract_Example.html">
+            
+                <a href="3.2_A_Contract_Example.html">
+            
+                    
+                    3.2 A Contract Example 约定的范例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="3.3_Interface_&_Team_Development.html">
+            
+                <a href="3.3_Interface_&_Team_Development.html">
+            
+                    
+                    3.3 Interface & Team Development 接口与团队开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    4 Service Provider 服务提供者
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="4.1_As_Bootstrapper.html">
+            
+                <a href="4.1_As_Bootstrapper.html">
+            
+                    
+                    4.1 As Bootstrapper 他是引导程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="4.2_As_Organizer.html">
+            
+                <a href="4.2_As_Organizer.html">
+            
+                    
+                    4.2 As Organizer 作为管理工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="4.3_Booting_Providers.html">
+            
+                <a href="4.3_Booting_Providers.html">
+            
+                    
+                    4.3 Booting Providers 服务提供者的启动过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="4.4_Providing_The_Core.html">
+            
+                <a href="4.4_Providing_The_Core.html">
+            
+                    
+                    4.4 Providing The Core 核心也是服务提供者的模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    5 Application Structure 应用结构
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="5.1_Introduction.html">
+            
+                <a href="5.1_Introduction.html">
+            
+                    
+                    5.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="5.2_MVC_Is_Killing_You.html">
+            
+                <a href="5.2_MVC_Is_Killing_You.html">
+            
+                    
+                    5.2 MVC Is Killing You MVC是慢性谋杀
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="5.3_Bye_Models.html">
+            
+                <a href="5.3_Bye_Models.html">
+            
+                    
+                    5.3 Bye, Bye Models 再见，模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="5.4_It's_All_About_The_Layers.html">
+            
+                <a href="5.4_It's_All_About_The_Layers.html">
+            
+                    
+                    5.4 It's All About The Layers 核心思想就是分层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="5.5_Where_To_Put_Stuff.html">
+            
+                <a href="5.5_Where_To_Put_Stuff.html">
+            
+                    
+                    5.5 Where To Put "Stuff" 东西都放哪儿？
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    6 Applied Architecture: Decoupling Handles 实用做法：解耦处理函数
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="6.1_Introduction.html">
+            
+                <a href="6.1_Introduction.html">
+            
+                    
+                    6.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="6.2_Decoupling_Handlers.html">
+            
+                <a href="6.2_Decoupling_Handlers.html">
+            
+                    
+                    6.2 Decoupling Handlers 解耦处理函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7.3" data-path="6.3_Other_Handlers.html">
+            
+                <a href="6.3_Other_Handlers.html">
+            
+                    
+                    6.3 Other Handlers 其他处理函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    7 Extending The Framework 扩展框架
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="7.1_Introduction.html">
+            
+                <a href="7.1_Introduction.html">
+            
+                    
+                    7.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="7.2_Managers_&_Factories.html">
+            
+                <a href="7.2_Managers_&_Factories.html">
+            
+                    
+                    7.2 Managers & Factories 管理者和工厂
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="7.3_Cache.html">
+            
+                <a href="7.3_Cache.html">
+            
+                    
+                    7.3 Cache 缓存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="7.4_Session.html">
+            
+                <a href="7.4_Session.html">
+            
+                    
+                    7.4 Session 会话
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="7.5_Authentication.html">
+            
+                <a href="7.5_Authentication.html">
+            
+                    
+                    7.5 Authentication 身份认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="7.6_IoC_Based_Extension.html">
+            
+                <a href="7.6_IoC_Based_Extension.html">
+            
+                    
+                    7.6 IoC Based Extension 使用容器进行扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="7.7_Request_Extension.html">
+            
+                <a href="7.7_Request_Extension.html">
+            
+                    
+                    7.7 Request Extension 请求的扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    8 Single Responsibility Principle 单一职责原则
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="8.1_Introduction.html">
+            
+                <a href="8.1_Introduction.html">
+            
+                    
+                    8.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="8.2_In_Action.html">
+            
+                <a href="8.2_In_Action.html">
+            
+                    
+                    8.2 In Action 实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    9 Open Closed Principle 开放封闭原则
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="9.1_Introduction.html">
+            
+                <a href="9.1_Introduction.html">
+            
+                    
+                    9.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="9.2_In_Action.html">
+            
+                <a href="9.2_In_Action.html">
+            
+                    
+                    9.2 In Action 实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    10 Liskov Substitution Principle 里氏替换原则
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="10.1_Introduction.html">
+            
+                <a href="10.1_Introduction.html">
+            
+                    
+                    10.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="10.2_In_Action.html">
+            
+                <a href="10.2_In_Action.html">
+            
+                    
+                    10.2 In Action 实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    11 Interface Segregation Principle 接口隔离原则
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="11.1_Introduction.html">
+            
+                <a href="11.1_Introduction.html">
+            
+                    
+                    11.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="11.2_In_Action.html">
+            
+                <a href="11.2_In_Action.html">
+            
+                    
+                    11.2 In Action 实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" >
+            
+                <span>
+            
+                    
+                    12 Dependency Inversion Principle 依赖反转原则
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="12.1_Introduction.html">
+            
+                <a href="12.1_Introduction.html">
+            
+                    
+                    12.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="12.2_In_Action.html">
+            
+                <a href="12.2_In_Action.html">
+            
+                    
+                    12.2 In Action 实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >6.3 Other Handlers 其他处理函数</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="other-handlers-&#x5176;&#x4ED6;&#x5904;&#x7406;&#x51FD;&#x6570;">Other Handlers &#x5176;&#x4ED6;&#x5904;&#x7406;&#x51FD;&#x6570;</h2>
+<p>We can improve many other types of &quot;handlers&quot; using this same approach to decoupling. By restricting all handlers to being simple translation layers, you can keep your heavy business logic neatly organized and decoupled from the rest of the framework. To drive the point home further, let&apos;s examine a route filter that verifies that the current user of our application is subscribed to our &quot;premium&quot; pricing tier.</p>
+<p>&#x4F7F;&#x7528;&#x7C7B;&#x4F3C;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6539;&#x8FDB;&#x548C;&#x89E3;&#x8026;&#x5F88;&#x591A;&#x5176;&#x4ED6;&#x7C7B;&#x578B;&#x7684;&#x201C;&#x5904;&#x7406;&#x51FD;&#x6570;&#x201D;&#x3002;&#x5C06;&#x8FD9;&#x4E9B;&#x5904;&#x7406;&#x51FD;&#x6570;&#x9650;&#x5236;&#x5728;&#x8F6C;&#x6362;&#x5C42;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5C06;&#x4F60;&#x5E9E;&#x5927;&#x7684;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x548C;&#x6846;&#x67B6;&#x89E3;&#x8026;&#xFF0C;&#x5E76;&#x4FDD;&#x6301;&#x6574;&#x6D01;&#x7684;&#x4EE3;&#x7801;&#x7ED3;&#x6784;&#x3002;&#x4E3A;&#x4E86;&#x5DE9;&#x56FA;&#x8FD9;&#x79CD;&#x601D;&#x60F3;&#xFF0C;&#x6211;&#x4EEC;&#x6765;&#x770B;&#x770B;&#x4E00;&#x4E2A;&#x8DEF;&#x7531;&#x8FC7;&#x6EE4;&#x5668;&#x3002;&#x8BE5;&#x8FC7;&#x6EE4;&#x5668;&#x7528;&#x6765;&#x9A8C;&#x8BC1;&#x5F53;&#x524D;&#x7528;&#x6237;&#x662F;&#x5426;&#x662F;&#x4EA4;&#x8FC7;&#x94B1;&#x7684;&#x9AD8;&#x7EA7;&#x7528;&#x6237;&#x5957;&#x9910;&#x3002;</p>
+<pre><code>Route::filter(&apos;premium&apos;, function()
+{
+    return Auth::user() &amp;&amp; Auth::user()-&gt;plan == &apos;premium&apos;;
+});
+</code></pre><p>On first glance, this route filter looks very innocent. What could possibly be wrong with a filter that is so small? However, even in this small filter, we are leaking implementation details of our application into the code. Notice that we are manually checking the value of the plan variable. We have tightly coupled the representation of &quot;plans&quot; in our business layer into our routing / transport layer. Now, if we change how the &quot;premium&quot; plan is represented in our database or user model, we will need to change this route filter!</p>
+<p>&#x731B;&#x4E00;&#x770B;&#x8FD9;&#x8DEF;&#x7531;&#x8FC7;&#x6EE4;&#x5668;&#x6CA1;&#x4EC0;&#x4E48;&#x95EE;&#x9898;&#x554A;&#x3002;&#x8FD9;&#x4E48;&#x7B80;&#x5355;&#x7684;&#x8FC7;&#x6EE4;&#x5668;&#x80FD;&#x6709;&#x4EC0;&#x4E48;&#x9519;&#x8BEF;&#xFF1F;&#x7136;&#x800C;&#x5C31;&#x662F;&#x662F;&#x8FD9;&#x4E48;&#x5C0F;&#x7684;&#x8FC7;&#x6EE4;&#x5668;&#xFF0C;&#x6211;&#x4EEC;&#x5374;&#x5C06;&#x6211;&#x4EEC;&#x5E94;&#x7528;&#x5B9E;&#x73B0;&#x7684;&#x7EC6;&#x8282;&#x66B4;&#x9732;&#x4E86;&#x51FA;&#x6765;&#x3002;&#x8981;&#x6CE8;&#x610F;&#x6211;&#x4EEC;&#x5728;&#x8BE5;&#x8FC7;&#x6EE4;&#x5668;&#x91CC;&#x662F;&#x5199;&#x660E;&#x4E86;&#x8981;&#x68C0;&#x67E5;plan&#x53D8;&#x91CF;&#x3002;&#x8FD9;&#x4F7F;&#x5F97;&#x5C06;&#x201C;&#x5957;&#x9910;&#x65B9;&#x6848;&#x201D;&#x5728;&#x6211;&#x4EEC;&#x5E94;&#x7528;&#x4E2D;&#x7684;&#x4EE3;&#x8868;&#x503C;&#xFF08;&#x8BD1;&#x8005;&#x6CE8;&#xFF1A;&#x5373;plan&#x53D8;&#x91CF;&#x7684;&#x503C;&#xFF09;&#x66B4;&#x9732;&#x5728;&#x4E86;&#x8DEF;&#x7531;/&#x4F20;&#x8F93;&#x5C42;&#x91CC;&#x9762;&#x3002;&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x82E5;&#x60F3;&#x8C03;&#x6574;&#x201C;&#x9AD8;&#x7EA7;&#x5957;&#x9910;&#x201D;&#x5728;&#x6570;&#x636E;&#x5E93;&#x6216;&#x7528;&#x6237;&#x6A21;&#x578B;&#x7684;&#x4EE3;&#x8868;&#x503C;&#xFF0C;&#x6211;&#x4EEC;&#x7ADF;&#x7136;&#x5C31;&#x9700;&#x8981;&#x6539;&#x8FD9;&#x4E2A;&#x8DEF;&#x7531;&#x8FC7;&#x6EE4;&#x5668;&#xFF01;</p>
+<p>Instead, let&apos;s make a very simple change:</p>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x7B80;&#x5355;&#x6539;&#x4E00;&#x70B9;&#x513F;&#xFF1A;</p>
+<pre><code>Route::filter(&apos;premium&apos;, function()
+{
+    return Auth::user() &amp;&amp; Auth::user()-&gt;isPremium();
+});
+</code></pre><p>A small change like this has great benefits and very little cost. By deferring the determination of whether a user is on the premium plan to the model, we have removed all implementation details from our route filter. Our filter is no longer responsible for knowing how to determine if a user is on the premium plan. Instead, it simply asks the User model. Now, if the representation of premium plans changes in the database, there is no need to update the route filter!</p>
+<p>&#x5C0F;&#x5C0F;&#x7684;&#x6539;&#x53D8;&#x5C31;&#x5E26;&#x6765;&#x5DE8;&#x5927;&#x7684;&#x6548;&#x679C;&#xFF0C;&#x5E76;&#x4E14;&#x4EE3;&#x4EF7;&#x4E5F;&#x5F88;&#x5C0F;&#x3002;&#x6211;&#x4EEC;&#x5C06;&#x5224;&#x65AD;&#x7528;&#x6237;&#x662F;&#x5426;&#x4F7F;&#x7528;&#x9AD8;&#x7EA7;&#x5957;&#x9910;&#x7684;&#x903B;&#x8F91;&#x653E;&#x5728;&#x4E86;&#x7528;&#x6237;&#x6A21;&#x578B;&#x91CC;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x4ECE;&#x8DEF;&#x7531;&#x8FC7;&#x6EE4;&#x5668;&#x91CC;&#x53BB;&#x6389;&#x4E86;&#x5BF9;&#x5957;&#x9910;&#x5224;&#x65AD;&#x7684;&#x5B9E;&#x73B0;&#x7EC6;&#x8282;&#x3002;&#x6211;&#x4EEC;&#x7684;&#x8FC7;&#x6EE4;&#x5668;&#x4E0D;&#x518D;&#x9700;&#x8981;&#x77E5;&#x9053;&#x5177;&#x4F53;&#x600E;&#x4E48;&#x5224;&#x65AD;&#x7528;&#x6237;&#x662F;&#x4E0D;&#x662F;&#x9AD8;&#x7EA7;&#x5957;&#x9910;&#x4E86;&#xFF0C;&#x5B83;&#x53EA;&#x8981;&#x7B80;&#x5355;&#x7684;&#x628A;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x4EA4;&#x7ED9;&#x7528;&#x6237;&#x6A21;&#x578B;&#x3002;&#x73B0;&#x5728;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x60F3;&#x8C03;&#x6574;&#x9AD8;&#x7EA7;&#x5957;&#x9910;&#x5728;&#x6570;&#x636E;&#x5E93;&#x91CC;&#x7684;&#x7EC6;&#x8282;&#xFF0C;&#x4E5F;&#x4E0D;&#x5FC5;&#x518D;&#x53BB;&#x6539;&#x52A8;&#x8DEF;&#x7531;&#x8FC7;&#x6EE4;&#x5668;&#x4E86;&#xFF01;</p>
+<blockquote>
+<h3 id="who-is-responsible-&#x8C01;&#x8D1F;&#x8D23;&#xFF1F;">Who Is Responsible? &#x8C01;&#x8D1F;&#x8D23;&#xFF1F;</h3>
+<p>Again we find ourselves exploring the concept of responsibility. Remember, always be considering a class&apos; responsibility and knowledge. Avoid making your transport layer, such as handler, responsible for knowledge about your application and business logic.</p>
+<p>&#x5728;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x53C8;&#x4E00;&#x6B21;&#x8BA8;&#x8BBA;&#x4E86;&#x8D23;&#x4EFB;&#x7684;&#x6982;&#x5FF5;&#x3002;&#x8BB0;&#x4F4F;&#xFF0C;&#x59CB;&#x7EC8;&#x4FDD;&#x6301;&#x4E00;&#x4E2A;&#x7C7B;&#x5E94;&#x8BE5;&#x6709;&#x4EC0;&#x4E48;&#x6837;&#x7684;&#x8D23;&#x4EFB;&#xFF0C;&#x5E94;&#x8BE5;&#x77E5;&#x9053;&#x4EC0;&#x4E48;&#x3002;&#x907F;&#x514D;&#x5728;&#x5904;&#x7406;&#x51FD;&#x6570;&#x8FD9;&#x79CD;&#x4F20;&#x8F93;&#x5C42;&#x76F4;&#x63A5;&#x7F16;&#x5199;&#x592A;&#x591A;&#x4F60;&#x5E94;&#x7528;&#x7684;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x3002;</p>
+</blockquote>
+<p><em>&#x8BD1;&#x8005;&#x6CE8;&#xFF1A;&#x672C;&#x6587;&#x591A;&#x6B21;&#x51FA;&#x73B0; transport layer, translation layer&#xFF0C;&#x5206;&#x522B;&#x8BD1;&#x4F5C;&#x4F20;&#x8F93;&#x5C42;&#x548C;&#x8F6C;&#x6362;&#x5C42;&#x3002;&#x5176;&#x5B9E;&#x4ED6;&#x4EEC;&#x5E94;&#x5F53;&#x6307;&#x4EE3;&#x7684;&#x540C;&#x4E00;&#x79CD;&#x4E1C;&#x897F;&#x3002;</em></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="6.2_Decoupling_Handlers.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 6.2 Decoupling Handlers 解耦处理函数">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"6.3 Other Handlers 其他处理函数","level":"1.7.3","depth":2,"next":{"title":"7 Extending The Framework 扩展框架","level":"1.8","depth":1,"ref":"","articles":[{"title":"7.1 Introduction 介绍","level":"1.8.1","depth":2,"path":"page/7.1_Introduction.md","ref":"./page/7.1_Introduction.md","articles":[]},{"title":"7.2 Managers & Factories 管理者和工厂","level":"1.8.2","depth":2,"path":"page/7.2_Managers_&_Factories.md","ref":"./page/7.2_Managers_&_Factories.md","articles":[]},{"title":"7.3 Cache 缓存","level":"1.8.3","depth":2,"path":"page/7.3_Cache.md","ref":"./page/7.3_Cache.md","articles":[]},{"title":"7.4 Session 会话","level":"1.8.4","depth":2,"path":"page/7.4_Session.md","ref":"./page/7.4_Session.md","articles":[]},{"title":"7.5 Authentication 身份认证","level":"1.8.5","depth":2,"path":"page/7.5_Authentication.md","ref":"./page/7.5_Authentication.md","articles":[]},{"title":"7.6 IoC Based Extension 使用容器进行扩展","level":"1.8.6","depth":2,"path":"page/7.6_IoC_Based_Extension.md","ref":"./page/7.6_IoC_Based_Extension.md","articles":[]},{"title":"7.7 Request Extension 请求的扩展","level":"1.8.7","depth":2,"path":"page/7.7_Request_Extension.md","ref":"./page/7.7_Request_Extension.md","articles":[]}]},"previous":{"title":"6.2 Decoupling Handlers 解耦处理函数","level":"1.7.2","depth":2,"path":"page/6.2_Decoupling_Handlers.md","ref":"./page/6.2_Decoupling_Handlers.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"page/6.3_Other_Handlers.md","mtime":"2017-06-29T04:04:17.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-29T04:15:21.787Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

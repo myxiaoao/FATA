@@ -1,0 +1,1020 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>5.5 Where To Put "Stuff" 东西都放哪儿？ · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="5.4_It's_All_About_The_Layers.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Author's Note
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    1 Dependency Injection 依赖注入
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="1.1_The_Problem.html">
+            
+                <a href="1.1_The_Problem.html">
+            
+                    
+                    1.1 The Problem 遇到的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="1.2_Build_A_Contract.html">
+            
+                <a href="1.2_Build_A_Contract.html">
+            
+                    
+                    1.2 Build A Contract 建立约定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="1.3_Take_It_further.html">
+            
+                <a href="1.3_Take_It_further.html">
+            
+                    
+                    1.3 Take It further 更进一步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="1.4_Too_Much_Java.html">
+            
+                <a href="1.4_Too_Much_Java.html">
+            
+                    
+                    1.4 Too Much Java? 太像Java了？
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    2 The IoC Container 控制反转容器
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="2.1_Basic_Binding.html">
+            
+                <a href="2.1_Basic_Binding.html">
+            
+                    
+                    2.1 Basic Binding 基础绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="2.2_Reflective_Resolution.html">
+            
+                <a href="2.2_Reflective_Resolution.html">
+            
+                    
+                    2.2 Reflective Resolution 反射解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    3 Interface As Contract 接口约定
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="3.1_Strong_Typing_&_Water_Fowl.html">
+            
+                <a href="3.1_Strong_Typing_&_Water_Fowl.html">
+            
+                    
+                    3.1 Strong Typing & Water Fowl 强类型和小鸭子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="3.2_A_Contract_Example.html">
+            
+                <a href="3.2_A_Contract_Example.html">
+            
+                    
+                    3.2 A Contract Example 约定的范例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="3.3_Interface_&_Team_Development.html">
+            
+                <a href="3.3_Interface_&_Team_Development.html">
+            
+                    
+                    3.3 Interface & Team Development 接口与团队开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    4 Service Provider 服务提供者
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="4.1_As_Bootstrapper.html">
+            
+                <a href="4.1_As_Bootstrapper.html">
+            
+                    
+                    4.1 As Bootstrapper 他是引导程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="4.2_As_Organizer.html">
+            
+                <a href="4.2_As_Organizer.html">
+            
+                    
+                    4.2 As Organizer 作为管理工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="4.3_Booting_Providers.html">
+            
+                <a href="4.3_Booting_Providers.html">
+            
+                    
+                    4.3 Booting Providers 服务提供者的启动过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="4.4_Providing_The_Core.html">
+            
+                <a href="4.4_Providing_The_Core.html">
+            
+                    
+                    4.4 Providing The Core 核心也是服务提供者的模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    5 Application Structure 应用结构
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="5.1_Introduction.html">
+            
+                <a href="5.1_Introduction.html">
+            
+                    
+                    5.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="5.2_MVC_Is_Killing_You.html">
+            
+                <a href="5.2_MVC_Is_Killing_You.html">
+            
+                    
+                    5.2 MVC Is Killing You MVC是慢性谋杀
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="5.3_Bye_Models.html">
+            
+                <a href="5.3_Bye_Models.html">
+            
+                    
+                    5.3 Bye, Bye Models 再见，模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="5.4_It's_All_About_The_Layers.html">
+            
+                <a href="5.4_It's_All_About_The_Layers.html">
+            
+                    
+                    5.4 It's All About The Layers 核心思想就是分层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.5" data-path="5.5_Where_To_Put_Stuff.html">
+            
+                <a href="5.5_Where_To_Put_Stuff.html">
+            
+                    
+                    5.5 Where To Put "Stuff" 东西都放哪儿？
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    6 Applied Architecture: Decoupling Handles 实用做法：解耦处理函数
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="6.1_Introduction.html">
+            
+                <a href="6.1_Introduction.html">
+            
+                    
+                    6.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="6.2_Decoupling_Handlers.html">
+            
+                <a href="6.2_Decoupling_Handlers.html">
+            
+                    
+                    6.2 Decoupling Handlers 解耦处理函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="6.3_Other_Handlers.html">
+            
+                <a href="6.3_Other_Handlers.html">
+            
+                    
+                    6.3 Other Handlers 其他处理函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    7 Extending The Framework 扩展框架
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="7.1_Introduction.html">
+            
+                <a href="7.1_Introduction.html">
+            
+                    
+                    7.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="7.2_Managers_&_Factories.html">
+            
+                <a href="7.2_Managers_&_Factories.html">
+            
+                    
+                    7.2 Managers & Factories 管理者和工厂
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="7.3_Cache.html">
+            
+                <a href="7.3_Cache.html">
+            
+                    
+                    7.3 Cache 缓存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="7.4_Session.html">
+            
+                <a href="7.4_Session.html">
+            
+                    
+                    7.4 Session 会话
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="7.5_Authentication.html">
+            
+                <a href="7.5_Authentication.html">
+            
+                    
+                    7.5 Authentication 身份认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="7.6_IoC_Based_Extension.html">
+            
+                <a href="7.6_IoC_Based_Extension.html">
+            
+                    
+                    7.6 IoC Based Extension 使用容器进行扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="7.7_Request_Extension.html">
+            
+                <a href="7.7_Request_Extension.html">
+            
+                    
+                    7.7 Request Extension 请求的扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    8 Single Responsibility Principle 单一职责原则
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="8.1_Introduction.html">
+            
+                <a href="8.1_Introduction.html">
+            
+                    
+                    8.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="8.2_In_Action.html">
+            
+                <a href="8.2_In_Action.html">
+            
+                    
+                    8.2 In Action 实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    9 Open Closed Principle 开放封闭原则
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="9.1_Introduction.html">
+            
+                <a href="9.1_Introduction.html">
+            
+                    
+                    9.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="9.2_In_Action.html">
+            
+                <a href="9.2_In_Action.html">
+            
+                    
+                    9.2 In Action 实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    10 Liskov Substitution Principle 里氏替换原则
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="10.1_Introduction.html">
+            
+                <a href="10.1_Introduction.html">
+            
+                    
+                    10.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="10.2_In_Action.html">
+            
+                <a href="10.2_In_Action.html">
+            
+                    
+                    10.2 In Action 实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    11 Interface Segregation Principle 接口隔离原则
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="11.1_Introduction.html">
+            
+                <a href="11.1_Introduction.html">
+            
+                    
+                    11.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="11.2_In_Action.html">
+            
+                <a href="11.2_In_Action.html">
+            
+                    
+                    11.2 In Action 实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" >
+            
+                <span>
+            
+                    
+                    12 Dependency Inversion Principle 依赖反转原则
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="12.1_Introduction.html">
+            
+                <a href="12.1_Introduction.html">
+            
+                    
+                    12.1 Introduction 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="12.2_In_Action.html">
+            
+                <a href="12.2_In_Action.html">
+            
+                    
+                    12.2 In Action 实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >5.5 Where To Put "Stuff" 东西都放哪儿？</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="where-to-put-stuff-&#x4E1C;&#x897F;&#x90FD;&#x653E;&#x54EA;&#x513F;&#xFF1F;">Where To Put &quot;Stuff&quot; &#x4E1C;&#x897F;&#x90FD;&#x653E;&#x54EA;&#x513F;&#xFF1F;</h2>
+<p>When developing applications with Laravel, you may sometimes wonder where to put &quot;stuff&quot;. For example, where should you put &quot;helper&quot; functions? Where should you put event listeners? Where should you put view composers? It may be surprising for you to know that the answer is: &quot;wherever you want!&quot; Laravel does not have many conventions regarding where things belong on the file system. However, as this answer is not often satisfactory, we&apos;ll explore some possible locations for such things before moving on.</p>
+<p>&#x5F53;&#x7528; Laravel &#x5F00;&#x53D1;&#x5E94;&#x7528;&#x65F6;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x8FF7;&#x60D1;&#x4E8E;&#x5E94;&#x8BE5;&#x628A;&#x5404;&#x79CD;&#x201C;&#x4E1C;&#x897F;&#x201D;&#x90FD;&#x653E;&#x5728;&#x54EA;&#x513F;&#x3002;&#x6BD4;&#x5982;&#xFF0C;&#x8F85;&#x52A9;&#x51FD;&#x6570;&#x8981;&#x653E;&#x5728;&#x54EA;&#x91CC;&#xFF1F;&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5668;&#x8981;&#x653E;&#x5728;&#x54EA;&#x91CC;&#xFF1F;&#x89C6;&#x56FE;&#x7EC4;&#x4EF6;&#x8981;&#x653E;&#x5728;&#x54EA;&#x91CC;&#xFF1F;&#x7B54;&#x6848;&#x53EF;&#x80FD;&#x51FA;&#x4E4E;&#x4F60;&#x7684;&#x610F;&#x6599;&#x2014;&#x2014;&#x201C;&#x60F3;&#x653E;&#x54EA;&#x513F;&#x90FD;&#x884C;&#xFF01;&#x201D;Laravel&#x5E76;&#x6CA1;&#x6709;&#x5F88;&#x591A;&#x5728;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x4E0A;&#x7684;&#x7EA6;&#x5B9A;&#x3002;&#x4E0D;&#x8FC7;&#x8FD9;&#x4E2A;&#x7B54;&#x6848;&#x7684;&#x786E;&#x4E0D;&#x80FD;&#x8BA9;&#x4EBA;&#x6EE1;&#x610F;&#xFF0C;&#x6240;&#x4EE5;&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x5C31;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x5C55;&#x5F00;&#x63A2;&#x7D22;&#xFF0C;&#x63A2;&#x7D22;&#x8FD9;&#x4E9B;&#x201C;&#x4E1C;&#x897F;&#x201D;&#x7A76;&#x7ADF;&#x53EF;&#x4EE5;&#x653E;&#x5728;&#x54EA;&#x513F;&#x3002;</p>
+<h3 id="helper-functions-&#x8F85;&#x52A9;&#x51FD;&#x6570;">Helper Functions &#x8F85;&#x52A9;&#x51FD;&#x6570;</h3>
+<p>Laravel ships with a file full of helpers functions (support/helpers.php). You may wish to create a similar file containing helper functions relevant to your own application and conding style. A great place to include these functions are the &quot;start&quot; files. Within your start/global.php file, which is included on every request to the application, you may simply require your own helpers.php file:</p>
+<p>Laravel &#x6709;&#x4E00;&#x4E2A;&#x6587;&#x4EF6; (support/helpers.php) &#x91CC;&#x9762;&#x90FD;&#x662F;&#x8F85;&#x52A9;&#x51FD;&#x6570;&#x3002;&#x4F60;&#x6216;&#x8BB8;&#x5E0C;&#x671B;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7C7B;&#x4F3C;&#x7684;&#x6587;&#x4EF6;&#x6765;&#x5B58;&#x50A8;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x8F85;&#x52A9;&#x51FD;&#x6570;&#x3002;&#x201C;start&#x201D; &#x6587;&#x4EF6;&#x662F;&#x4E2A;&#x4E0D;&#x9519;&#x7684;&#x5165;&#x53E3;&#xFF0C;&#x8BE5;&#x6587;&#x4EF6;&#x4F1A;&#x5728;&#x5E94;&#x7528;&#x7684;&#x6BCF;&#x4E00;&#x6B21;&#x8BF7;&#x6C42;&#x65F6;&#x88AB;&#x8BBF;&#x95EE;&#x3002;&#x5728; start/global.php &#x91CC;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5F15;&#x5165;&#x4F60;&#x81EA;&#x5DF1;&#x5199;&#x7684; helpers.php &#x6587;&#x4EF6;&#xFF0C;&#x5C31;&#x50CF;&#x8FD9;&#x6837;&#xFF1A;</p>
+<pre><code>// Within app/start/global.php
+
+require_once __DIR__.&apos;/../helpers.php&apos;;
+//&#x8BD1;&#x8005;&#x6CE8;&#xFF1A; &#x8BE5;helpers.php&#x6587;&#x4EF6;&#x4F4D;&#x4E8E;app&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x9700;&#x8981;&#x4F60;&#x81EA;&#x5DF1;&#x521B;&#x5EFA;&#x3002;&#x4F60;&#x60F3;&#x653E;&#x5230;&#x522B;&#x7684;&#x5730;&#x65B9;&#x4E5F;&#x53EF;&#x4EE5;&#x3002;
+</code></pre><h3 id="event-listeners-&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5668;">Event Listeners &#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5668;</h3>
+<p>Since event listeners obviously do not belongs in the routes.php file, and can begin to clutter the &quot;start&quot; files, we need another location to place this code. A great option is a service provider. As we&apos;ve learned, service providers are not strictly for registering bindings in the IoC container. They can be used to do all sorts of work. By grouping related event registrations inside of a service provider, the code stays neatly tucked away behind the scenes of your main application code. View composers, which are a type of event, may also be neatly grouped within service providers.</p>
+<p>&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5668;&#x5F53;&#x7136;&#x4E0D;&#x8BE5;&#x653E;&#x5230; routes.php &#x6587;&#x4EF6;&#x91CC;&#x9762;&#xFF0C;&#x82E5;&#x76F4;&#x63A5;&#x653E;&#x5230; &#x201C;start&#x201D; &#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x6587;&#x4EF6;&#x91CC;&#x4F1A;&#x6BD4;&#x8F83;&#x4E71;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x8981;&#x627E;&#x53E6;&#x5916;&#x7684;&#x5730;&#x65B9;&#x6765;&#x5B58;&#x653E;&#x3002;&#x670D;&#x52A1;&#x63D0;&#x4F9B;&#x8005;&#x662F;&#x4E2A;&#x597D;&#x5730;&#x65B9;&#x3002;&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x4E86;&#x89E3;&#x5230;&#xFF0C;&#x670D;&#x52A1;&#x63D0;&#x4F9B;&#x8005;&#x53EF;&#x4E0D;&#x4EC5;&#x4EC5;&#x662F;&#x7528;&#x6765;&#x505A;&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#x7ED1;&#x5B9A;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x5E72;&#x5176;&#x4ED6;&#x4E8B;&#x513F;&#x3002;&#x53EF;&#x4EE5;&#x5C06;&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5668;&#x7528;&#x670D;&#x52A1;&#x63D0;&#x4F9B;&#x8005;&#x6765;&#x7BA1;&#x7406;&#x8D77;&#x6765;&#xFF0C;&#x8BA9;&#x4EE3;&#x7801;&#x66F4;&#x6574;&#x6D01;&#xFF0C;&#x4E0D;&#x81F3;&#x4E8E;&#x5F71;&#x54CD;&#x5230;&#x4F60;&#x5E94;&#x7528;&#x7684;&#x4E3B;&#x8981;&#x903B;&#x8F91;&#x4EE3;&#x7801;&#x3002;&#x89C6;&#x56FE;&#x7EC4;&#x4EF6;&#x5176;&#x5B9E;&#x548C;&#x4E8B;&#x4EF6;&#x5DEE;&#x4E0D;&#x591A;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x7C7B;&#x4F3C;&#x7684;&#x653E;&#x5230;&#x670D;&#x52A1;&#x63D0;&#x4F9B;&#x8005;&#x91CC;&#x9762;&#x3002;</p>
+<p>For example, a service provider that registers events might look something like this:</p>
+<p>&#x4F8B;&#x5982;&#x4F7F;&#x7528;&#x670D;&#x52A1;&#x63D0;&#x4F9B;&#x8005;&#x8FDB;&#x884C;&#x4E8B;&#x4EF6;&#x6CE8;&#x518C;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#xFF1A;</p>
+<pre><code>&lt;?php namespace QuickBill\Providers;
+    use Illuminate\Support\ServiceProvider;
+    class BillingEventsProvider extends ServiceProvider{
+        public function boot()
+        {
+            Event::listen(&apos;billing.failed&apos;, function($bill)
+            {
+                // Handle failed billing event...
+            });
+        }
+    }
+</code></pre><p>After creating the provider, we would simply add it our providers array within the app/config/app.php configuration file.</p>
+<p>&#x521B;&#x5EFA;&#x597D;&#x670D;&#x52A1;&#x63D0;&#x4F9B;&#x8005;&#x540E;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5C06;&#x5B83;&#x52A0;&#x5165;&#x5230; app/config/app.php &#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7684;providers&#x6570;&#x7EC4;&#x91CC;&#x3002;</p>
+<blockquote>
+<h3 id="wear-the-boot&#x6CE8;&#x610F;&#x542F;&#x52A8;&#x6D41;&#x7A0B;">Wear The Boot&#x6CE8;&#x610F;&#x542F;&#x52A8;&#x6D41;&#x7A0B;</h3>
+<p>Remember, in the example above, we are using the boot method for a reason. The register method in a service provider is only intended for binding classes into container.</p>
+<p>&#x8BB0;&#x4F4F;&#x5728;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x91CC;&#x9762;&#xFF0C;&#x6211;&#x4EEC;&#x5728; boot &#x65B9;&#x6CD5;&#x91CC;&#x8FDB;&#x884C;&#x7F16;&#x5199;&#x662F;&#x6709;&#x539F;&#x56E0;&#x7684;&#x3002;register &#x65B9;&#x6CD5;&#x53EA;&#x80FD;&#x7528;&#x6765;&#x8FDB;&#x884C;&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#x7ED1;&#x5B9A;&#x3002;</p>
+</blockquote>
+<h3 id="error-handlers-&#x9519;&#x8BEF;&#x5904;&#x7406;">Error Handlers &#x9519;&#x8BEF;&#x5904;&#x7406;</h3>
+<p>If your application has many customer error handlers, they may start to take over your &quot;start&quot; files. Again, like event handlers, these are best moved into a service provider. The service provider might be named something like QuickBillErrorProvider. Within the boot method of this provider you may register all of your custom error handlers. Again, keeps boilerplate code out of the main files of your application. An error handler provider would look something like this:</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x7684;&#x5E94;&#x7528;&#x91CC;&#x9762;&#x6709;&#x5F88;&#x591A;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x9519;&#x8BEF;&#x5904;&#x7406;&#x65B9;&#x6CD5;&#xFF0C;&#x90A3;&#x4F60;&#x7684;&#x201C;&#x542F;&#x52A8;&#x201D;&#x6587;&#x4EF6;&#x53EF;&#x80FD;&#x4F1A;&#x5F88;&#x81C3;&#x80BF;&#x3002;&#x548C;&#x521A;&#x624D;&#x7684;&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5668;&#x4E00;&#x6837;&#xFF0C;&#x9519;&#x8BEF;&#x5904;&#x7406;&#x65B9;&#x6CD5;&#x4E5F;&#x6700;&#x597D;&#x653E;&#x5230;&#x670D;&#x52A1;&#x63D0;&#x4F9B;&#x8005;&#x91CC;&#x9762;&#x3002;&#x8FD9;&#x79CD;&#x670D;&#x52A1;&#x63D0;&#x4F9B;&#x8005;&#x53EF;&#x4EE5;&#x547D;&#x540D;&#x4E3A;&#x50CF; QuickBillErrorProvider &#x8FD9;&#x79CD;&#x3002;&#x7136;&#x540E;&#x4F60;&#x5728; boot &#x65B9;&#x6CD5;&#x91CC;&#x60F3;&#x6CE8;&#x518C;&#x591A;&#x5C11;&#x9519;&#x8BEF;&#x5904;&#x7406;&#x65B9;&#x6CD5;&#x90FD;&#x53EF;&#x4EE5;&#x4E86;&#x3002;&#x91CD;&#x7533;&#x4E00;&#x4E0B;&#x7CBE;&#x795E;&#xFF1A;&#x8BA9;&#x5446;&#x677F;&#x7684;&#x4EE3;&#x7801;&#x79BB;&#x4F60;&#x5E94;&#x7528;&#x7684;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x8D8A;&#x8FDC;&#x8D8A;&#x597D;&#x3002;&#x4E0B;&#x65B9;&#x5C55;&#x793A;&#x4E86;&#x8FD9;&#x79CD;&#x670D;&#x52A1;&#x63D0;&#x4F9B;&#x8005;&#x7684;&#x4E00;&#x79CD;&#x53EF;&#x80FD;&#x7684;&#x4E66;&#x5199;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<pre><code>&lt;?php namespace QuickBill\Providers;
+use App, Illuminate\Support\ServiceProvider;
+class QuickBillErrorProvider extends ServiceProvider {
+    public function register()
+    {    
+        //
+    }
+
+    public function boot()
+    {
+        App::error(function(BillingFailedException $e)
+        {
+            // Handle failed billing exceptions ...
+        });
+    }
+}
+</code></pre><blockquote>
+<h3 id="the-small-solution-&#x7B80;&#x4FBF;&#x505A;&#x6CD5;">The Small Solution &#x7B80;&#x4FBF;&#x505A;&#x6CD5;</h3>
+<p>Of course, if you only have one or two simple error handlers, keeping them in the &quot;start&quot; files is a reasonable and quick solution.</p>
+<p>&#x5F53;&#x7136;&#x5982;&#x679C;&#x4F60;&#x53EA;&#x6709;&#x4E00;&#x4E24;&#x6761;&#x7B80;&#x5355;&#x7684;&#x9519;&#x8BEF;&#x5904;&#x7406;&#x65B9;&#x6CD5;&#xFF0C;&#x90A3;&#x4E48;&#x90FD;&#x5199;&#x5728;&#x201C;&#x542F;&#x52A8;&#x201D;&#x6587;&#x4EF6;&#x91CC;&#x9762;&#x4E5F;&#x662F;&#x4E00;&#x79CD;&#x53C8;&#x5FEB;&#x53C8;&#x597D;&#x7684;&#x7B80;&#x4FBF;&#x505A;&#x6CD5;&#x3002;</p>
+</blockquote>
+<h3 id="the-rest-&#x5176;&#x4ED6;">The Rest &#x5176;&#x4ED6;</h3>
+<p>In general, classes may be neatly organized using a PSR-0 structure within a directory of your application. Imperative code such as event listeners, error handlers, and other &quot;registeration&quot; type operations may be placed inside of a service provider. With what we have learned so far, you should be able to make an educated decision on where to place a piece of code. But, don&apos;t be hesitate to experiment. The beauty of Laravel is that you can make conventions that work best for you. Discover a structure that works best for your applications, and make sure to share your insights with others!</p>
+<p>&#x901A;&#x5E38;&#x53EA;&#x8981;&#x9075;&#x5FAA; PSR-0&#xFF08;&#x8BD1;&#x8005;&#x6CE8;&#xFF1A;&#x6216; PSR-4 &#xFF09;&#x5C31;&#x53EF;&#x4EE5;&#x4FDD;&#x6301;&#x7C7B;&#x7684;&#x6574;&#x6D01;&#x3002;&#x547D;&#x4EE4;&#x5F0F;&#x7684;&#x4EE3;&#x7801;&#x6BD4;&#x5982;&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5668;&#x3001;&#x9519;&#x8BEF;&#x5904;&#x7406;&#x5668;&#x8FD8;&#x6709;&#x5176;&#x4ED6;&#x201C;&#x6CE8;&#x518C;&#x201D;&#x6027;&#x8D28;&#x7684;&#x64CD;&#x4F5C;&#x90FD;&#x53EF;&#x4EE5;&#x653E;&#x5728;&#x670D;&#x52A1;&#x63D0;&#x4F9B;&#x8005;&#x91CC;&#x9762;&#x3002;&#x5BF9;&#x4E8E;&#x4EC0;&#x4E48;&#x4EE3;&#x7801;&#x8981;&#x653E;&#x5728;&#x4EC0;&#x4E48;&#x5730;&#x65B9;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x7ED3;&#x5408;&#x4F60;&#x76EE;&#x524D;&#x4E3A;&#x6B62;&#x5B66;&#x5230;&#x7684;&#x77E5;&#x8BC6;&#xFF0C;&#x5E94;&#x5F53;&#x53EF;&#x4EE5;&#x7ED9;&#x51FA;&#x4E00;&#x4E2A;&#x6709;&#x7406;&#x6709;&#x636E;&#x7684;&#x7B54;&#x6848;&#x4E86;&#x3002;&#x4F46;&#x6C38;&#x8FDC;&#x4E0D;&#x8981;&#x5BB3;&#x6015;&#x8BD5;&#x9A8C;&#x3002;Laravel &#x6700;&#x7F8E;&#x5999;&#x4E4B;&#x5904;&#x5C31;&#x662F;&#x4F60;&#x53EF;&#x4EE5;&#x505A;&#x51FA;&#x6700;&#x9002;&#x5408;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x98CE;&#x683C;&#x3002;&#x53BB;&#x63A2;&#x7D22;&#x548C;&#x53D1;&#x73B0;&#x6700;&#x9002;&#x5408;&#x4F60;&#x81EA;&#x5DF1;&#x5E94;&#x7528;&#x7684;&#x7ED3;&#x6784;&#x5427;&#xFF0C;&#x522B;&#x5FD8;&#x4E86;&#x548C;&#x4ED6;&#x4EBA;&#x5206;&#x4EAB;&#x4F60;&#x7684;&#x89C1;&#x89E3;&#xFF01;</p>
+<p>For example, as you probably noticed above, you might create a Providers namespace for all of your application&apos;s custom service providers, creating a directory structure like so:</p>
+<p>&#x4F8B;&#x5982;&#x4F60;&#x53EF;&#x80FD;&#x6CE8;&#x610F;&#x5230;&#x6211;&#x4EEC;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x4E2A; Providers &#x7684;&#x547D;&#x540D;&#x7A7A;&#x95F4;&#x6765;&#x5B58;&#x653E;&#x4F60;&#x81EA;&#x5DF1;&#x5199;&#x7684;&#x670D;&#x52A1;&#x63D0;&#x4F9B;&#x8005;&#xFF0C;&#x76EE;&#x5F55;&#x5C31;&#x7C7B;&#x4F3C;&#x4E8E;&#x8FD9;&#x6837;&#xFF1A;</p>
+<pre><code>// app
+    // QuickBill
+        // Billing
+        // Extensions
+            //Pagination
+                -&gt; Environment.php
+        // Providers
+            -&gt; EventPusherServiceProvider.php
+        // Repositories
+        User.php
+        Payment.php
+</code></pre><p>Notice that in the example we have a Providers and an Extensions namespace. All of your application&apos;s service providers could be stored in the Providers directory in namespace, and the Extensions namespace is a convenient place to store extensions made to core framework classes.</p>
+<p>&#x770B;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x6211;&#x4EEC;&#x6709; Providers &#x548C; Extensions &#x4E24;&#x4E2A;&#x547D;&#x540D;&#x7A7A;&#x95F4;&#xFF08;&#x8BD1;&#x8005;&#x6CE8;&#xFF1A;&#x5206;&#x522B;&#x5BF9;&#x5E94;&#x4E24;&#x4E2A;&#x540C;&#x540D;&#x76EE;&#x5F55;&#xFF09;&#x3002;&#x4F60;&#x81EA;&#x5DF1;&#x5199;&#x7684;&#x670D;&#x52A1;&#x63D0;&#x4F9B;&#x8005;&#x53EF;&#x4EE5;&#x653E;&#x5230; Providers &#x547D;&#x540D;&#x7A7A;&#x95F4;&#x4E0B;&#x3002;&#x90A3;&#x4E2A; Extensions &#x547D;&#x540D;&#x7A7A;&#x95F4;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x5B58;&#x653E;&#x4F60;&#x5BF9;&#x6846;&#x67B6;&#x6838;&#x5FC3;&#x8FDB;&#x884C;&#x6269;&#x5C55;&#x7684;&#x7C7B;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="5.4_It's_All_About_The_Layers.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 5.4 It's All About The Layers 核心思想就是分层">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"5.5 Where To Put \"Stuff\" 东西都放哪儿？","level":"1.6.5","depth":2,"next":{"title":"6 Applied Architecture: Decoupling Handles 实用做法：解耦处理函数","level":"1.7","depth":1,"ref":"","articles":[{"title":"6.1 Introduction 介绍","level":"1.7.1","depth":2,"path":"page/6.1_Introduction.md","ref":"./page/6.1_Introduction.md","articles":[]},{"title":"6.2 Decoupling Handlers 解耦处理函数","level":"1.7.2","depth":2,"path":"page/6.2_Decoupling_Handlers.md","ref":"./page/6.2_Decoupling_Handlers.md","articles":[]},{"title":"6.3 Other Handlers 其他处理函数","level":"1.7.3","depth":2,"path":"page/6.3_Other_Handlers.md","ref":"./page/6.3_Other_Handlers.md","articles":[]}]},"previous":{"title":"5.4 It's All About The Layers 核心思想就是分层","level":"1.6.4","depth":2,"path":"page/5.4_It's_All_About_The_Layers.md","ref":"./page/5.4_It's_All_About_The_Layers.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"page/5.5_Where_To_Put_Stuff.md","mtime":"2017-06-29T04:04:17.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-29T04:15:21.787Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
