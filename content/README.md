@@ -25,5 +25,3 @@ Taylor Otwell
 © 著作权归作者所有
 
 ---
-
-> 提示：Git clone 到本地用 Gitbook 阅读体验更佳。
